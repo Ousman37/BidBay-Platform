@@ -39,12 +39,13 @@
             </a>
           </li>
         </ul>
-        <a href="login.html" class="btn-cta login-btn mypopup" id="login-link"
-          >Login</a
-        >
+        
+        <script>
+          if (localStorage.getItem())
+        </script>
         <a
           href="register.html"
-          id="register-link"
+          id="registerLink"
           class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
           <i class="fas fa-circle-user"></i> Register</a
         >
@@ -57,18 +58,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    const user = localStorage.getItem('authLogin');
-    const logoutButton = document.getElementById('logout-link');
-    const registerButton = document.getElementById('register-link');
-    const loginButton = document.getElementById('login-link');
-
-    console.log(user);
-    console.log(logoutButton);
-    console.log(registerButton);
-    console.log(loginButton);
-  </script>
 </header>
 
 <!-- NavBar -->
