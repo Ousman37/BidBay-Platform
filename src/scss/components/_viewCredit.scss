@@ -1,0 +1,46 @@
+.view-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .container {
+    padding: 3em 0;
+
+    @media (max-width: 992px) {
+      padding: 2em 0;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 2em;
+      color: #fff;
+
+      @media (max-width: 992px) {
+        font-size: 1.5em;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 1.25em;
+      }
+    }
+
+    .card {
+      margin-top: 2em;
+      text-align: center;
+
+      .card-body {
+        h5 {
+          font-size: 1.25em;
+          font-weight: bold;
+          margin-bottom: 1em;
+        }
+
+        span {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}

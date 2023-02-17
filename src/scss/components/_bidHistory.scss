@@ -1,0 +1,67 @@
+// Add the following SCSS code to the stylesheet
+
+.navbar {
+  background-color: #ddd;
+  padding: 1rem;
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .navbar-nav {
+    a {
+      font-size: 1.2rem;
+      color: #333;
+      &:hover {
+        color: #fff;
+        background-color: #333;
+      }
+    }
+
+    css .active {
+      color: #fff;
+      background-color: #333;
+    }
+
+    .dropdown-menu {
+      background-color: #ddd;
+      a {
+        font-size: 1.2rem;
+        color: #333;
+        &:hover {
+          color: #fff;
+          background-color: #333;
+        }
+      }
+    }
+  }
+}
+
+
+// Add the following SCSS code to the stylesheet
+
+.top-up-header {
+background-color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+
+#gh-topl {
+list-style: none;
+display: flex;
+li {
+padding: 0 1rem;
+a {
+text-decoration: none;
+color: #333;
+&:hover {
+color: #fff;
+background-color: #333;
+}
+}
+}
+}
+}
