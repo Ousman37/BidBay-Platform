@@ -1,0 +1,20 @@
+// Selector for Bootstrap tweaks
+.bootstrap-tweaks {
+  .card-img-top {
+    width: 100%;
+    height: 16em;
+    object-fit: cover;
+  }
+
+  .list-group-horizontal > .list-group-item {
+    border: none;
+  }
+
+  #info-modal-img {
+    width: 100%;
+  }
+
+  .table {
+    margin-bottom: 0;
+  }
+}

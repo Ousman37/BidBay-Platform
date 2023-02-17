@@ -1,0 +1,116 @@
+// Define a variable for the card margin
+
+
+// Define the card styles
+.card {
+  margin:  1rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-body {
+    padding: 1rem;
+
+    h5 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    .btn {
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+}
+
+// Define styles for the "How to Bid" section
+.section-bid {
+  text-align: center;
+  padding: 2rem;
+  background-color: #333;
+
+  h2 {
+    color: #fff;
+  }
+
+  p {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}
+
+// Define styles for the "Time Remaining" section
+.section-time {
+  text-align: center;
+  padding: 2rem;
+
+  h2 {
+    color: #ffc107;
+  }
+
+  p {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}
+
+// Define the card grid layout for desktop screens
+@media (min-width: 992px) {
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    /* Change 15px to your desired margin /
+.card {
+flex: 1 1 calc(25% - 30px);
+/ Change 30px to your desired margin /
+margin: 15px;
+/ Change 15px to your desired margin */
+  }
+}
+
+// Adjust the layout for screens 900px and up
+@media (min-width: 900px) {
+  .card-deck .card {
+    flex: 1 1 calc(33.33% - 20px);
+    /* Change 20px to your desired margin /
+margin: 10px;
+/ Change 10px to half of your desired margin */
+  }
+}
+
+// Adjust the layout for screens 800px and up
+@media (min-width: 800px) {
+  .card-deck .card {
+    flex: 1 1 calc(50% - 20px);
+    /* Change 20px to your desired margin /
+margin: 10px;
+/ Change 10px to half of your desired margin */
+  }
+}
+// Adjust the layout for screens 500px and up
+@media (min-width: 500px) {
+  .card-deck .card {
+    flex: 1 1 100%;
+  }
+}
+
+// Center the sections horizontally and vertically on the page
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .section-bid,
+  .section-time {
+    width: 100%;
+    max-width: 600px;
+  }
+}
