@@ -50,7 +50,10 @@ function register() {
       }
 
        // The password value must be at least 8 characters.
-      console.log(data);
+      // console.log(data);
+
+      // redirect the user to login...
+      window.location.href = 'login.html';
     })
     .catch(error => {
       console.error('Error:', error[0]);
