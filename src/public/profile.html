@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/css/register.css">
+
+
+  <script src="/src/scss/js/api/auth/registerUser.js" defer "></script>
+
+
+
+  <!--font awesome link-->
+  <script src=" https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+
+  <title>Profile</title>
+
+</head>
+
+<body class="bg-primary">
+  <div class="fixed-top bg-primary">
+    <!-- TOP HEADER -->
+    <header class="top-heder">
+      <div class="container">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message "></i>
+              </div>
+              <a href="#0">
+                info@Bid-It.com
+              </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0">
+                +47 45540443
+              </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="/pages/login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="/pages/register.html" class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a href="#" class="btn-cta  logout-btn mypopup" id="logout-link">Logout</a>
+
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- TOP HEADER -->
+    <!--========= NVA BAR SECTION ======== -->
+    <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h1>Bid-It.com</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create_listing.htm">Create a listing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="view_listing.html" id="update-avatar-link">View your listings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search_listing.html" id="view-credits-link">Search listings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+
+            <button type="button" class="btn btn-add-sell btn-sm">Want to sell?</button>
+            <button type="button" class="btn btn-add-cart btn-sm"><i class="fa-solid fa-cart-arrow-down"></i> Add to
+              Cart</button>
+
+            <li class="search-icon d-flex justify-content-end">
+              <a href="#search" class="search">
+                <i class="fas fa-search"></i>
+              </a>
+              <div id="search" class="modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <form role="search" id="search-form" action="/search" method="get">
+                        <input name="q" type="search" placeholder="Type search">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </div>
+  <!--========= NVA BAR SECTION ENDS  ======== -->
+  <main>
+    <!--========= Registration  SECTION   ======== -->
+    <Section class="registration">
+      <div class="container mt-5">
+        <h1 class="text-center mb-5">Welcome, User!</h1>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <form id="registrationForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+              </div>
+              <div class="form-group">
+                <label for="avatar">Avatar (optional)</label>
+                <input type="text" class="form-control" id="avatar" name="avatar">
+              </div>
+              <p id="success-message" class="text-success"></p>
+
+              <button type="button" onclick="register()" class="btn btn-primary">Register</button>
+            </form>
+            <div id="message">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </Section>
+
+    <!--=========  STARTED    SECTION  TEAM ENDS   ======== -->
+    <!--=========  NEWS LETTER SECTION  ======== -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-wrapper">
+          <div class="icon-div">
+            <img src="" alt="mailbox-img">
+          </div>
+          <div class="content">
+            <h4 class="text-white p-3">
+              Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
+            </h4>
+            <form action="#" class="newsletter-form">
+              <input type="email" placeholder="Enter Your Email" class="form-input">
+              <button type="submit" class="cmn--btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========  NEWS LETTER SECTION ENDS  ======== -->
+  </main>
+  <!--=========  FOOTER SECTION  ======== -->
+  <footer class="footer-section section-bg">
+    <div class="container">
+      <div class="footer-top pb-80">
+        <div class="row g-5">
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
+            <div class="widget-items">
+              <div class="footer-head">
+                <h5 class="title">
+                  Quick Links
+                </h5>
+              </div>
+              <div class="content-area">
+                <ul class="quick-link">
+                  <li>
+                    <a href="#0">
+                      <i class="fa-solid fa-angles-right"></i> My Account
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="fa-solid fa-angles-right"></i> Affiliate Program
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="fa-solid fa-angles-right"></i> Lawyer Consulting
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="fa-solid fa-angles-right"></i> Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="fa-solid fa-angles-right"></i> Term &amp; Condition
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
+            <div class="widget-items">
+              <div class="footer-head">
+                <h5 class="title">
+                  Help Center
+                </h5>
+              </div>
+              <div class="content-area">
+                <ul class="quick-link">
+                  <li>
+                    <a href="contact.html">
+                      <i class="fa-solid fa-angles-right"></i> Contact Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="faq.html">
+                      <i class="fa-solid fa-angles-right"></i> FAQ
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="fa-solid fa-angles-right"></i> Borrow
+                    </a>
+                  </li>
+                  <li>
+                    <a href="auction.html">
+                      <i class="fa-solid fa-angles-right"></i> Sell You Product
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about.html">
+                      <i class="fa-solid fa-angles-right"></i> About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="product-details.html">
+                      <i class="fa-solid fa-angles-right"></i> Product DEtails
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
+            <div class="widget-items">
+              <div class="footer-head">
+                <h5 class="title">
+                  Contact Us
+                </h5>
+              </div>
+              <div class="content-area">
+                <ul class="contact">
+                  <li class="text-info">
+                    <i class="fas fa-phone"></i>
+                    <a href="#0">
+                      +47 45540443
+                    </a>
+                  </li>
+                  <li class="text-info">
+                    <i class="fas fa-message"></i>
+                    <a href="#0">info@bid-it.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 ">
+            <div class="widget-items">
+              <div class="footer-head">
+                <h5 class="title">
+                  Follow Us
+                </h5>
+              </div>
+              <ul class="footer-social">
+                <li>
+                  <a href="#0" class=" text-info">
+                    <div class="icon">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <span>
+                      Facebook
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#0" class=" text-info">
+                    <div class="icon twitter">
+                      <i class="fab fa-twitter"></i>
+                    </div>
+                    <span>
+                      Twitter
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#0" class=" text-info">
+                    <div class="icon twitch">
+                      <i class="fa-brands fa-twitch"></i>
+                    </div>
+                    <span>
+                      Twitch
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#0" class=" text-info">
+                    <div class="icon youtube">
+                      <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <span>
+                      Youtube
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--=========  FOOTER BOTTOM   ======== -->
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <a href="index.html">
+            <h6>Bid-It</h6>
+          </a>
+        </div>
+        <ul class="footer-bottom-link">
+          <li>
+            <a href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#0">
+              Predict
+            </a>
+          </li>
+          <li>
+            <a href="auction.html">
+              Auction
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--=========  FOOTER BOTTOM ENDS  ======== -->
+      <!--========= MAIN  BOTTOM   ======== -->
+      <div class="main-bottom">
+        <p class="text-white">
+          Copyright © 2023 Bid-IT | Designed by <a href="#0" class="text-info">Ethmane</a>
+        </p>
+        <ul class="footer-bottom-selected">
+          <li class="text-muted">
+            Select your language
+          </li>
+          <li>
+            <select style="display: none;">
+              <option value="1">English</option>
+              <option value="2">Bangla</option>
+              <option value="3">Telugu</option>
+              <option value="4">Hindi</option>
+            </select>
+            <div class="nice-selected" tabindex="0"><span class="current text-muted">English</span>
+              <ul class="list">
+                <li data-value="1" class="option selected text-muted">English</li>
+                <li data-value="2" class="option">Bangla</li>
+                <li data-value="3" class="option">Telugu</li>
+                <li data-value="4" class="option">Hindi</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--========= MAIN  BOTTOM  ENDS ======== -->
+    </div>
+  </footer>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
+
+
+
+  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
