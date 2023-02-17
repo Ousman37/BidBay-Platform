@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/create-listing.css">
+  <link rel="stylesheet" href="/dist/css/viewCredit.css">
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>View Listing</title>
-
-
+  <title>View Credit </title>
+  <!-- <script src="../js/authDecision.js" defer></script> -->
 </head>
 
 <body class="bg-primary">
@@ -19,20 +18,25 @@
     <!-- --------------------- COMMONS HEADER --------------------- -->
     <div id="header"></div>
   </div>
+  <!--========= NVA BAR SECTION ENDS  ======== -->
 
   <main>
-    <!--========= Create Listing  SECTION   ======== -->
-    <Section class="Create-listing">
+    <!--=== USER MAY VIEW TOTAL CREDIT ===== -->
+    <section class="view-credit">
       <div class="container mt-5">
-        <div class="container">
-          <h2>Listing Title</h2>
-          <p>Listing Description</p>
-          <p>Price: $100</p>
-          <img src="/assets/img/ jewelry5.jpg" alt="Listing Image" />
-          <button class="btn btn-primary">Bid on Listing</button>
+        <h1 class="text-center">My Credits</h1>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Total Credit: <span id="totalCredit">0</span></h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </Section>
+    </section>
+
 
     <!--=========  STARTED    SECTION  TEAM ENDS   ======== -->
     <!--=========  NEWS LETTER SECTION  ======== -->
@@ -62,9 +66,13 @@
   <div id="footer"></div>
   <!--=========  FOOTER SECTION  ENDS ======== -->
 
-  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/src/views/common.js" defer> </script>
+  <script src="/src/scss/routes/js/bidHistory.js" defer type="module"></script>
+<script src="/src/scss/routes/js/api/auth/logoutUser.js" defer></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script src="../js/logout.js" defer></script>
+  <script src="/src/views/common.js" defer> </script>
+  <script src="/src/views/viewCredit.js" defer></script>
 </body>
 
 </html>

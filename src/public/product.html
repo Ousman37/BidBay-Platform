@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/css/product.css">
+
+  <!-- 
+  <script src="/src/scss/js/api/auth/registerUser.js" defer "></script> -->
+
+
+
+  <!--font awesome link-->
+  <script src=" https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+
+  <title>Profile</title>
+
+</head>
+
+<body class="bg-primary">
+  <div class="fixed-top bg-primary">
+
+    <!-- --------------------- COMMONS HEADER --------------------- -->
+    <div id="header"></div>
+
+  </div>
+  <!--========= NVA BAR SECTION ENDS  ======== -->
+  <main>
+    <!--========= Registration  SECTION   ======== -->
+    <Section class="product-page">
+      <!-- Grid of auction items -->
+      <div id="auction-container" class="container">
+        <div id="auction-grid" class="row row-cols-1 row-cols-md-3 g-4"></div>
+
+       
+      </div>
+
+      <!-- Login popup -->
+      <
+      <!-- Info popup -->
+      <div id="info-modal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="info-modal-title" class="modal-title"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="info-modal-desc"></p>
+              <img id="info-modal-img"></img>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Submit bid"
+                onclick="openBid(this.id)">Submit bid</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Bid popup -->
+      <div id="bid-modal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="bid-modal-title" class="modal-title">Place your bid</h5>
+            </div>
+            <div class="modal-body">
+              <p>You are about to place a bid on <strong id="bid-modal-subtitle"></strong></p>
+              <p class="text-muted">(This is just a demo, you're not bidding real money)</p>
+              <form onsubmit="return false;">
+                <div class="form-floating mb-3">
+                  <input type="amount" class="form-control" id="amount-input" placeholder="amount"
+                    onkeypress="if (event.key == 'Enter') {placeBid()}">
+                  <label for="amount-input">Amount</label>
+                  <div id="bad-amount-feedback" class="invalid-feedback"></div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                aria-label="Cancel">Cancel</button>
+              <button type="submit" class="btn btn-primary" onclick="placeBid()">Submit bid</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--=========  STARTED    SECTION  TEAM ENDS   ======== -->
+      <!--=========  NEWS LETTER SECTION  ======== -->
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-wrapper">
+            <div class="icon-div">
+              <img src="" alt="mailbox-img">
+            </div>
+            <div class="content">
+              <h4 class="text-white p-3">
+                Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
+              </h4>
+              <form action="#" class="newsletter-form">
+                <input type="email" placeholder="Enter Your Email" class="form-input">
+                <button type="submit" class="cmn--btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--=========  NEWS LETTER SECTION ENDS  ======== -->
+  </main>
+
+  <!--=========  FOOTER SECTION  ======== -->
+  <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
+  <div id="footer"></div>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
+
+  <!-- Custom JS -->
+
+  <script src="/src/js/auctions.js"></script>
+  <script src="/src/js/popups.js"></script>
+  <!-- Create anonymous account -->
+  <script>
+    populateAuctionGrid();
+    setClocks();
+    dataListener()
+    autoLogin();
+  </script>
+
+  </Section>
+
+
+  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/src/views/common.js" defer> </script>
+</body>
+
+</html>
