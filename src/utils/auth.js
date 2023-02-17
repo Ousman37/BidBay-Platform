@@ -2,8 +2,6 @@
 /* eslint-disable no-undef */
 const loginUrl = 'https://api.noroff.dev/api/v1/auction/auth/login';
 
-alert('Connected');
-
 function login() {
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
@@ -17,8 +15,13 @@ function login() {
     .then((response) => response.json())
     .then((data) => {
       // Do After Login..
-
+      // Setting the LocalStorage Here..
+      localStorage.setItem('authLogin', data.accessToken);
       console.log(data);
+
+      const credits = data.credits;
+      // Redirect to the another page..
+      window.location.href = `view-credit.html?credits=${credits}`;
     })
     .catch((e) => {
       console.log('Error is there', e);
