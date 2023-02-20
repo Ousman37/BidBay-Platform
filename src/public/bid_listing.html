@@ -9,7 +9,8 @@
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>View Listing</title>
+  <title>Bid on Listing</title>
+  <script src="../js/authDecision.js" defer></script>
 
 
 </head>
@@ -17,6 +18,55 @@
 <body class="bg-primary">
   <div class="fixed-top bg-primary">
     <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> info@Bid-It.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
+              class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <div id="header"></div>
   </div>
 
@@ -24,7 +74,7 @@
     <!--========= Create Listing  SECTION   ======== -->
     <section class="bid-listing">
       <div class="container mt-5">
-        <h2>Bid on Listing</h2>
+        <h2 class="text-white fw-bold">Bid on Listing</h2>
         <div class="container">
           <div class="card">
             <img class="card-img-bid" src="/assets/img/luxury_watch.jpg" alt="Listing Image" />
@@ -41,8 +91,17 @@
               <form class="form-group">
                 <label for="amount">Enter Bid Amount:</label>
                 <input type="number" class="form-control" id="amount" />
-                <button type="submit" class="btn btn-bid btn-primary">Submit Bid</button>
+                <button type="button" class="btn btn-bid btn-primary" onclick="bitSubmit()">Submit Bid</button>
               </form>
+
+              <script>
+                function bitSubmit() {
+                  const user = localStorage.getItem('authLogin');
+                  if (!user) {
+                    window.location.href = '/src/public/login.html';
+                  }
+                }
+              </script>
             </div>
           </div>
         </div>
@@ -77,7 +136,7 @@
   <!--=========  FOOTER SECTION  ENDS ======== -->
 
   <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="../js/logout.js" defer></script>
   <script src="/src/views/common.js" defer> </script>
 </body>
 

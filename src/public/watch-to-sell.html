@@ -9,14 +9,63 @@
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>BidBay | login  </title>
-
+  <title> Sell | or Create a bidder account </title>
+  <script src="../js/authDecision.js" defer></script>
 
 </head>
 
 <body class="bg-primary">
   <div class="fixed-top bg-primary">
     <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> infoBidbay.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
+              class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
     <div id="header"></div>
   </div>
   <!--========= NVA BAR SECTION ENDS  ======== -->
@@ -24,21 +73,14 @@
   <main>
     <section class="registration-section">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-10 col-lg-8 mx-auto my-5">
-            <h1 class="text-center">Choose your account type</h1>
-            <p class="text-center">On BidBay.com, the public can bid on surplus and no longer needed items from
-              governments,
-              schools, and other related agencies.</p>
-          </div>
-        </div>
+        <h1 class="text-white">Welcome to sell or Create a bidder account</h1>
         <div class="row">
           <div class="col-12 col-md-6 mb-4">
             <div class="card card-registration h-100">
               <img class="card-img-top img-fluid" src="/assets/img/bidder-registration.jpg" alt="Bidder Registration">
               <div class="card-body">
-                <h1 class="text-center">I want to Bid</h1>
-                <h2 class="text-center">Open to the Public!</h2>
+                <h2>I want to Bid</h2>
+
                 <hr>
                 <p>Bidding on BidBay.com is open to the public. Anyone can bid unless stated otherwise.</p>
                 <p>Valid US or Canadian Credit Card needed to place bid. Credit Card is for the buyers fee. <a href="#"
@@ -54,8 +96,8 @@
             <div class="card card-registration h-100">
               <img class="card-img-top img-fluid" src="/assets/img/seller-registration.jpg" alt="Seller Registration">
               <div class="card-body">
-                <h1 class="text-center">I want to Sell</h1>
-                <h2 class="text-center">Qualifying Agencies Only</h2>
+                <h2 class="text-center">I want to Sell</h2>
+
                 <hr>
                 <p>The following agency types can sell on BidBay:</p>
                 <ul>
@@ -83,15 +125,15 @@
       <div class="container">
         <div class="newsletter-wrapper">
           <div class="icon-div">
-            <img src="assets/img/icons867.png" alt="mailbox-img">
+            <img src="/assets/img/icons867.png" alt="mailbox-img">
           </div>
           <div class="content">
             <h4 class="text-white p-3">
-              Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
+              Get to Know the Visionaries Behind BidBay: Meet Our Management Team
             </h4>
             <form action="#" class="newsletter-form">
               <input type="email" placeholder="Enter Your Email" class="form-input">
-              <button type="submit" class="cmn--btn">Subscribe</button>
+              <button type="submit" class="bid-btn">Subscribe</button>
             </form>
           </div>
         </div>

@@ -5,24 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/product.css">
-
-  <!-- 
-  <script src="/src/scss/js/api/auth/registerUser.js" defer "></script> -->
-
-
+  <link rel="stylesheet" href="/dist/css/bidsTable.css">
 
   <!--font awesome link-->
-  <script src=" https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-
-  <title>Product Page</title>
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+  <title>Bids Table</title>
   <script src="../js/authDecision.js" defer></script>
+
 
 </head>
 
 <body class="bg-primary">
   <div class="fixed-top bg-primary">
-
     <!-- --------------------- COMMONS HEADER --------------------- -->
     <header class="top-heder">
       <div class="container-fluid">
@@ -74,43 +68,27 @@
       </div>
     </header>
     <div id="header"></div>
-
   </div>
-  <!--========= NVA BAR SECTION ENDS  ======== -->
+
   <main>
-    <!--========= Product card here   ======== -->
-
-    <section class="latest-news">
-      <h2>Latest News</h2>
-      <p>Check out our latest news and updates.</p>
-      <a href="#">Read More</a>
-    </section>
-    <section id="product-category">
-      <h2>Featured Products</h2>
-      <div class="container">
-        <div class="product-grid" id="products">
-          <!-- Product cards will be generated dynamically using JavaScript -->
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-product" src="/assets/img/pexels-car1.jpg" alt="Product 1">
-              <div class="card-body">
-                <h5 class="card-title">luxury car</h5>
-                <p class="card-text">A sleek and stylish car with advanced features for a smooth and comfortable ..</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add Bid Now</button>
-                  </div>
-                  <small class="text-muted">$19.99</small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+    <!--========= Create Listing  SECTION   ======== -->
+    <section class="order-history">
+      <h2>Order History</h2>
+      <div class="table-container">
+        <table id="orderTable">
+          <thead>
+            <tr>
+              <th>Order Number</th>
+              <th>Product Name</th>
+              <th>Quantity</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Order history will be added here dynamically using JavaScript -->
+          </tbody>
+        </table>
       </div>
-
     </section>
 
 
@@ -120,7 +98,7 @@
       <div class="container">
         <div class="newsletter-wrapper">
           <div class="icon-div">
-            <img src="/assets/img/icons867.png" alt="mailbox-img">
+            <img src="" alt="mailbox-img">
           </div>
           <div class="content">
             <h4 class="text-white p-3">
@@ -134,25 +112,16 @@
         </div>
       </div>
     </section>
-    <!--=========  NEWS LETTER SECTION ENDS  ======== -->
+
   </main>
+  <!--=========  FOOTER SECTION  ======== -->
 
-
-  <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
   <div id="footer"></div>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
 
-
-  <!-- Custom JS -->
-
-  <script src="/src/js/auctions.js"></script>
-  <script src="/src/js/popups.js"></script>
-  <!-- Create anonymous account -->
-
-  </Section>
-
-  <script src="/src/views/common.js" defer> </script>
-  <script src="/src/js/product.js"></script>
   <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/logout.js" defer></script>
+  <script src="/src/views/common.js" defer> </script>
 </body>
 
 </html>

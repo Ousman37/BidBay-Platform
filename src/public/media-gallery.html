@@ -5,24 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/product.css">
-
-  <!-- 
-  <script src="/src/scss/js/api/auth/registerUser.js" defer "></script> -->
-
-
+  <link rel="stylesheet" href="/dist/css/media-gallery.css">
 
   <!--font awesome link-->
-  <script src=" https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-
-  <title>Product Page</title>
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+  <title>View Listing</title>
   <script src="../js/authDecision.js" defer></script>
+
 
 </head>
 
 <body class="bg-primary">
   <div class="fixed-top bg-primary">
-
     <!-- --------------------- COMMONS HEADER --------------------- -->
     <header class="top-heder">
       <div class="container-fluid">
@@ -74,44 +68,42 @@
       </div>
     </header>
     <div id="header"></div>
-
   </div>
-  <!--========= NVA BAR SECTION ENDS  ======== -->
-  <main>
-    <!--========= Product card here   ======== -->
 
-    <section class="latest-news">
-      <h2>Latest News</h2>
-      <p>Check out our latest news and updates.</p>
-      <a href="#">Read More</a>
-    </section>
-    <section id="product-category">
-      <h2>Featured Products</h2>
-      <div class="container">
-        <div class="product-grid" id="products">
-          <!-- Product cards will be generated dynamically using JavaScript -->
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-product" src="/assets/img/pexels-car1.jpg" alt="Product 1">
-              <div class="card-body">
-                <h5 class="card-title">luxury car</h5>
-                <p class="card-text">A sleek and stylish car with advanced features for a smooth and comfortable ..</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add Bid Now</button>
-                  </div>
-                  <small class="text-muted">$19.99</small>
-                </div>
-              </div>
-            </div>
+  <main>
+    <!--========= Create Listing  SECTION   ======== -->
+
+    <Section class="media-gallery">
+      <div class="container mt-5">
+        <h1 class="text-center mb-5 text-white fw-bold fs-1">Media gallery</h1>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <form>
+              <label for="title" class="fw-bold fs-3">Title:</label><br>
+              <input type="text" id="title" name="title"><br>
+
+              <label for="deadline" class="fw-bold fs-3">Deadline:</label><br>
+              <input type="date" id="deadline" name="deadline"><br>
+
+              <label for="media" class="fw-bold fs-3">Media Gallery:</label><br>
+              <input type="file" id="media" name="media" multiple><br>
+
+              <label for="description" class="fw-bold fs-3">Description:</label><br>
+              <textarea id="description" name="description"></textarea><br>
+
+
+              <p id="success-message" class="text-success"></p>
+              <div id="error-message" class="text-danger"></div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
           </div>
 
+          <div id="product-list"></div>
         </div>
-
       </div>
 
-    </section>
+    </Section>
+
 
 
 
@@ -134,25 +126,17 @@
         </div>
       </div>
     </section>
-    <!--=========  NEWS LETTER SECTION ENDS  ======== -->
+
   </main>
+  <!--=========  FOOTER SECTION  ======== -->
 
-
-  <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
   <div id="footer"></div>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
 
-
-  <!-- Custom JS -->
-
-  <script src="/src/js/auctions.js"></script>
-  <script src="/src/js/popups.js"></script>
-  <!-- Create anonymous account -->
-
-  </Section>
-
-  <script src="/src/views/common.js" defer> </script>
-  <script src="/src/js/product.js"></script>
   <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/logout.js" defer></script>
+  <script src="/src/views/common.js" defer> </script>
+  <script src="/src/js/mediaGallery.js" defer></script>
 </body>
 
 </html>

@@ -11,14 +11,13 @@
   <script defer src="../utils/auth.js"></script>
 
 
-
   <title>Login</title>
 </head>
 
 <body>
+
   <main>
     <div class="container mt-5">
-
       <div class="row">
         <h1 class="text-center mb-5">Login</h1>
         <div class="col-md-6 mx-auto">
@@ -31,19 +30,24 @@
               <label for="password">Password</label>
               <input type="password" class="form-control" id="password" name="password" required>
             </div>
-            
+
             <p id="success-message" class="text-success"></p>
             <div id="error-message" class="text-danger"></div>
 
-
-            <!-- <button type="submit" id="submit-btn" class="btn btn-primary">Login</button> -->
             <button type="button" id="submit-btn" onclick="login()" class="btn btn-primary">Login</button>
-
+            <div class="load-wrapper" id="loading-div">
+              <div class="load-10">
+                <p>Loading 10</p>
+                <div class="bar"></div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
     </div>
   </main>
+
+
 
 
 
