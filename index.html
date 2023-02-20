@@ -10,14 +10,64 @@
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
   <title>Welcome To BidBay | Home </title>
-
+  <script src="/src/js/authDecision.js" defer></script>
 
 </head>
 
 <body class="bg-primary">
   <div class="fixed-top bg-primary">
-   <!-- --------------------- COMMONS HEADER --------------------- -->
-   <div id="header"></div>
+    <!-- --------------------- COMMONS HEADER --------------------- -->
+    <header class="top-heder">
+      <div class="container-fluid">
+        <div class="header-top-wrapper">
+          <ul class="header-top-left">
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-message"></i>
+              </div>
+              <a href="#0"> info@Bidbay.com </a>
+            </li>
+            <li>
+              <div class="icon text-white">
+                <i class="fas fa-phone"></i>
+              </div>
+              <a href="#0"> +47 45540443 </a>
+            </li>
+          </ul>
+          <div class="header-top-right">
+            <ul class="social">
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+
+            <a href="/src/public/login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="/src/public/register.html" id="registerLink"
+              class="btn-cta bid-btn cd-popup-trigger register-btn register-link">
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="header"></div>
   </div>
   <!--========= NVA BAR SECTION ENDS  ======== -->
 
@@ -32,22 +82,22 @@
             <div class="heading">
               <!-- Heading -->
               <h1 class="display-3 mb-10 text-white text-center text-md-start">
-                Win the Bid, Win the Item- Join <span class="text-white"> Bid-It </span> Today.
+                Win the Bid, Win the Item- Join <span class="text-white"> BidBay </span> Today.
 
               </h1>
 
               <!-- Text -->
               <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
-                Get the Best Deals and Sell with Ease on Bid-It.
+                Get the Best Deals and Sell with Ease on BidBay.
               </p>
-              <p class="text-light">Join Bid-It, the premier auction platform, and experience the thrill of bidding and
+              <p class="text-light">Join BidBay, the premier auction platform, and experience the thrill of bidding and
                 winning the items
                 you want. With our
                 easy-to-use platform, you can find the best deals on a variety of products and sell your own items with
                 ease. And as a
                 welcome bonus, when you join the website, you'll receive 1000 credits to start bidding right away. Don't
                 wait, sign up
-                for Bid-It now</p>
+                for BidBay now</p>
             </div>
 
             <!-- Buttons -->
@@ -84,7 +134,7 @@
               <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="card shadow h-100">
                   <!-- Image -->
-                  <img src="./assets/img/operator.png" class="card-img-top" alt="24/7 Online Support icon">
+                  <img src="./assets/img/operator.png" class="card-img-features" alt="24/7 Online Support icon">
 
                   <!-- Card body -->
                   <div class="card-body pb-0">
@@ -104,7 +154,7 @@
               <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="card shadow h-100">
                   <!-- Image -->
-                  <img src="./assets/img/prize.png" class="card-img-top" alt="course image">
+                  <img src="./assets/img/prize.png" class="card-img-features" alt="course image">
                   <div class="card-body pb-0">
                     <!-- Badge and favorite -->
                     <div class="d-flex justify-content-between mb-2">
@@ -123,7 +173,7 @@
               <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="card shadow h-100">
                   <!-- Image -->
-                  <img src="./assets/img/atm-card.png" class="card-img-top" alt="course image">
+                  <img src="./assets/img/atm-card.png" class="card-img-features" alt="course image">
                   <div class="card-body pb-0">
                     <!-- Badge and favorite -->
                     <div class="d-flex justify-content-between mb-2">
@@ -141,7 +191,7 @@
               <div class="col-sm-6 col-lg-4 col-xl-3">
                 <div class="card shadow h-100">
                   <!-- Image -->
-                  <img src="./assets/img/shipping0.png" class="card-img-top" alt="course image">
+                  <img src="./assets/img/shipping0.png" class="card-img-features" alt="course image">
                   <div class="card-body pb-0">
                     <!-- Badge and favorite -->
                     <div class="d-flex justify-content-between mb-2">
@@ -165,9 +215,9 @@
 
           <div class="py-5">
             <h1 class="display-5 fw-bold  text-center text-white">Get Started in 3 Easy Steps with 1000 Credits:
-              Understanding <span class="text-warning"> How Bid-It Works?</span></h1>
+              Understanding <span class="text-warning"> How BidBay Works?</span></h1>
 
-            <p class="fs-5 text-light mb-4">Bid-It makes it easy for you to start selling and bidding on items in no
+            <p class="fs-5 text-light mb-4">BidBay makes it easy for you to start selling and bidding on items in no
               time. When
               you
               join the website, you'll receive
@@ -177,7 +227,7 @@
               your items for auction, and (3) start bidding on items that interest you. Our user-friendly platform
               makes
               it a breeze
-              for you to navigate and get the most out of Bid-It. Start making profits today and join the Bid-It
+              for you to navigate and get the most out of BidBay. Start making profits today and join the BidBay
               community!</p>
 
           </div>
@@ -187,24 +237,24 @@
     <section class="started_section">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-3 border-top-md border-bottom border-end-md ">
+          <div class="col-md-6 col-lg-3 border-top-md border-bottom border-end-md">
             <div class="py-7 text-center">
               <div class="mb-3">
-                <img src="./assets/img/screen.png" alt="" style="border-radius: 50%">
+                <img src="./assets/img/writing.png" alt="" style="border-radius: 5%">
               </div>
               <div class="lh-1">
                 <h2 class="text-light mb-1">Sign Up for No Cost</h2>
-                <p class="text-light">Join the Bid-It community today by signing up for a free account. The registration
+                <p class="text-light">Join the BidBay community today by signing up for a free account. The registration
                   process is quick
                   and
                   easy, allowing you to start bidding in no time.</p>
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 border-top-md border-bottom border-end-lg ">
+          <div class="col-md-6 col-lg-3 border-top-md border-bottom border-end-md">
             <div class="py-7 text-center">
               <div class="mb-3">
-                <img src="./assets/img/screen.png" alt="" style="border-radius: 50%">
+                <img src="./assets/img/add-to-cart.png" alt="" style="border-radius: 5%">
               </div>
               <div class="lh-1">
                 <h2 class=" text-light mb-1">Get in on the Action</h2>
@@ -214,14 +264,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 border-top-lg border-bottom border-end-md ">
+          <div class="col-md-6 col-lg-3 border-top-lg border-bottom border-end-md">
             <div class="py-7 text-center">
               <div class="mb-3">
-                <img src="./assets/img/screen.png" alt="" style="border-radius: 50%">
+                <img src="./assets/img/auction.png" alt="" style="border-radius: 5%">
               </div>
               <div class="lh-1">
-                <h2 class="text-light mb-1">Submit a Bid on Bid-It</h2>
-                <p class="text-light">To get started with Bid-It auction, you'll need to sign up. Our registration
+                <h2 class="text-light mb-1">Submit a Bid on BidBay</h2>
+                <p class="text-light">To get started with BidBay auction, you'll need to sign up. Our registration
                   process is quick and
                   easy,
                   and best of all - it's completely free! Simply follow a few steps and you'll be ready to start bidding
@@ -233,11 +283,11 @@
           <div class="col-md-6 col-lg-3 border-top-lg border-bottom ">
             <div class="py-7 text-center">
               <div class="mb-3">
-                <img src="./assets/img/screen.png" alt="" style="border-radius: 50%">
+                <img src="./assets/img/success.png" alt="" style="border-radius: 5%">
               </div>
               <div class="lh-1">
                 <h2 class="text-light   mb-1">Get Ready to Win</h2>
-                <p class="text-light">Join the thrill of bidding on Bid-It by registering now. With just a few clicks,
+                <p class="text-light">Join the thrill of bidding on BidBay by registering now. With just a few clicks,
                   you can become a
                   part of
                   our auction community for free! Get ready to win and have fun!</p>
@@ -253,15 +303,16 @@
         <div class="tab-content" id="course-pills-tabContent">
 
           <div class="py-5">
-            <h1 class="display-5 fw-bold  text-center text-white">Latest Auctions on Bid-It
+            <h1 class="display-5 fw-bold  text-center text-white">Latest Auctions on BidBay
               Understanding </h1>
 
-            <p class="fs-5 text-light mb-4">Stay up-to-date with the latest and greatest auctions available on Bid-It.
+            <p class="fs-5 text-light mb-4">Stay up-to-date with the latest and greatest auctions available on BidBay.
               Whether you're looking for antiques,
               collectibles, or just a great deal, we have it all! Browse our extensive selection of items and start
               bidding now.
             </p>
-            <p class="fs-5 text-light mb-4">At Bid-It, we're passionate about providing a seamless and enjoyable bidding
+            <p class="fs-5 text-light mb-4">At BBidBay, we're passionate about providing a seamless and enjoyable
+              bidding
               experience for our users.
               Our platform is
               user-friendly and intuitive, making it easy for you to find what you're looking for and place your bids
@@ -436,13 +487,13 @@
             <div class="py-5">
               <h1 class="display-5 fw-bold  text-center text-white">Upcoming Auction </h1>
 
-              <p class="fs-5 text-light mb-4">Get ready for the next Bid-It auction! This is your chance to grab some
+              <p class="fs-5 text-light mb-4">Get ready for the next BidBay auction! This is your chance to grab some
                 amazing deals and unique finds. Whether you're
                 looking to add to your collection, update your home decor, or just treat yourself, you won't want to
                 miss this exciting
                 event. With a variety of items up for bidding, there's something for everyone. Don't wait - mark your
                 calendars and join
-                us for the upcoming Bid-It auction.
+                us for the upcoming BidBay auction.
 
               </p>
 
@@ -492,7 +543,7 @@
                       </div>
                     </div>
                     <div class="cm-button">
-                      <a href="product-details.html" class="cmn--btn">
+                      <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
                     </div>
@@ -544,7 +595,7 @@
                       </div>
                     </div>
                     <div class="cm-button">
-                      <a href="product-details.html" class="cmn--btn">
+                      <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
                     </div>
@@ -595,7 +646,7 @@
                       </div>
                     </div>
                     <div class="cm-button">
-                      <a href="product-details.html" class="cmn--btn">
+                      <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
                     </div>
@@ -646,7 +697,7 @@
                       </div>
                     </div>
                     <div class="cm-button">
-                      <a href="product-details.html" class="cmn--btn">
+                      <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
                     </div>
@@ -697,7 +748,7 @@
                       </div>
                     </div>
                     <div class="cm-button">
-                      <a href="product-details.html" class="cmn--btn">
+                      <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
                     </div>
@@ -748,7 +799,7 @@
                       </div>
                     </div>
                     <div class="cm-button">
-                      <a href="product-details.html" class="cmn--btn">
+                      <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
                     </div>
@@ -759,7 +810,7 @@
             </div>
             <div class="center pt-space align-item-center wow fadeInUp" data-wow-delay="0.9s"
               style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInUp;">
-              <a href="auction.html" class="cmn--border">
+              <a href="/src/public/product.html" class="btn-view " id="button">
                 View More
               </a>
             </div>
@@ -777,16 +828,16 @@
           <div class="col-lg-6 col-md-8">
             <div class="bidding-content">
               <h3 class="text-white">
-                Join Bid-It for Free and &amp; Start Bidding Today!
+                Join BidBay for Free and &amp; Start Bidding Today!
               </h3>
-              <p class="text-white">Ready to start bidding on amazing items and selling your own? With Bid-It, it's
+              <p class="text-white">Ready to start bidding on amazing items and selling your own? With BidBay, it's
                 quick and easy to get started. Simply
                 sign up for a free account and you'll be able to bid on items, list your own items for auction, and join
-                the Bid-It
+                the BidBay
                 community. Don't miss out on the exciting opportunity to find great deals and turn your unused items
                 into profits.
                 Register now and start bidding!</p>
-              <a href="#0" class="cmn--btn cd-popup-trigger">
+              <a href="#0" class="bid-btn cd-popup-trigger">
                 Register
               </a>
             </div>
@@ -806,32 +857,30 @@
         <div class="row">
           <div class="py-5">
             <h1 class="display-5 fw-bold  text-center text-white">Celebrate Your Success: Meet the Top Winners on
-              Bid-It </h1>
+              BidBay </h1>
 
-            <p class="fs-5 text-light mb-4">Join us in congratulating the top winners on Bid-It! Our platform is
+            <p class="fs-5 text-light mb-4">Join us in congratulating the top winners on BidBay! Our platform is
               filled
               with
               success stories of users who have won
               the items they desired or made a profit by selling their items. From electronics to collectibles,
-              Bid-It
+              BidBay
               has something
               for everyone. Check out our top winners and see what they have won. Who knows, you could be next!
               Start
               bidding and
-              selling on Bid-It today and become part of our community of successful bidders and sellers.</p>
+              selling on BidBay today and become part of our community of successful bidders and sellers.</p>
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInU animated" data-wow-delay="0.2s"
             style="visibility: visible; animation-delay: 0.2s;">
             <div class="team-items">
               <div class="thumb-box">
                 <div class="thumb">
-                  <img src="assets/img/Winners6.jpg" alt="team-img">
+                  <img src="assets/img/Winners6.jpg" alt="team-img" class="winner-img">
                 </div>
-                <div class="content">
-                  <h5 class="text-white">
-                    Oscar
-                  </h5>
-                </div>
+                <h5 class="text-white">
+                  Oscar
+                </h5>
               </div>
             </div>
           </div>
@@ -842,13 +891,11 @@
             <div class="team-items">
               <div class="thumb-box">
                 <div class="thumb">
-                  <img src="assets/img/Winners9.png" alt="James photo">
+                  <img src="assets/img/Winners9.png" alt="James photo" class="winner-img">
                 </div>
-                <div class="content">
-                  <h5 class="text-white">
-                    James
-                  </h5>
-                </div>
+                <h5 class="text-white">
+                  James
+                </h5>
               </div>
             </div>
           </div>
@@ -858,13 +905,11 @@
             <div class="team-items">
               <div class="thumb-box">
                 <div class="thumb">
-                  <img src="assets/img/Winners5.png" alt=" Charlie image">
+                  <img src="assets/img/Winners5.png" alt=" Charlie image" class="winner-img">
                 </div>
-                <div class="content">
-                  <h5 class="text-white">
-                    Charlie
-                  </h5>
-                </div>
+                <h5 class="text-white">
+                  Charlie
+                </h5>
               </div>
             </div>
           </div>
@@ -874,17 +919,14 @@
             <div class="team-items">
               <div class="thumb-box">
                 <div class="thumb">
-                  <img src="assets/img/Winners3.jpg" alt="Margaret´ photo">
+                  <img src="assets/img/Winners3.jpg" alt="Margaret´ photo" class="winner-img">
                 </div>
-                <div class="content">
-                  <h5 class="text-white">
-                    Margaret
-                  </h5>
-                </div>
+                <h5 class="text-white">
+                  Margaret
+                </h5>
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 wow fadeInUfadeInU animated" data-wow-delay="0.2s"
             style="visibility: visible; animation-delay: 0.2s;">
             <div class="team-items">
@@ -892,11 +934,9 @@
                 <div class="thumb">
                   <img src="assets/img/Winners2.jpg" alt="Valentina´ image">
                 </div>
-                <div class="content">
-                  <h5 class="text-white">
-                    Valentina
-                  </h5>
-                </div>
+                <h5 class="text-white">
+                  Valentina
+                </h5>
               </div>
             </div>
           </div>
@@ -908,11 +948,9 @@
                 <div class="thumb">
                   <img src="assets/img/social_face5.png" alt=" Valentina´s photo">
                 </div>
-                <div class="content">
-                  <h5 class="text-white">
-                    Valentina
-                  </h5>
-                </div>
+                <h5 class="text-white">
+                  Valentina
+                </h5>
               </div>
             </div>
           </div>
@@ -920,20 +958,19 @@
         </div>
       </div>
     </section>
-    <!--=========  STARTED    SECTION SUCCESS ENDS ======== -->
     <!--=========  CAROUSEL     SECTION  ======== -->
     <div class="container">
       <section>
         <div class="py-5">
           <h1 class="display-5 fw-bold  text-center text-white">Hear from Our Satisfied Customers </h1>
 
-          <p class="fs-5 text-light mb-4">At Bid-It, we take pride in providing a top-notch auction platform for our
+          <p class="fs-5 text-light mb-4">At BidBay, we take pride in providing a top-notch auction platform for our
             users. But don't just take our word for it -
-            read what our satisfied customers have to say about their experience with Bid-It. From ease of use to the
+            read what our satisfied customers have to say about their experience with BidBay. From ease of use to the
             variety of
-            items available, our testimonials highlight the many reasons why Bid-It is the premier choice for bidding
+            items available, our testimonials highlight the many reasons why BidBay is the premier choice for bidding
             and selling
-            items online. Join the Bid-It community today and see for yourself why our users love us!.</p>
+            items online. Join the BidBay community today and see for yourself why our users love us!.</p>
         </div>
 
         <div class="container-fluid">
@@ -967,7 +1004,7 @@
                               Incredible Speed and Accuracy
                             </h5>
                             <p class="text-white p-2">
-                              "I was blown away by the speed and accuracy of Bid-It's testimonial service. I was able to
+                              "I was blown away by the speed and accuracy of BidBay's testimonial service. I was able to
                               leave feedback for a seller
                               in just a few clicks and my testimonial was delivered immediately. The platform is
                               user-friendly and makes it easy for
@@ -977,7 +1014,7 @@
                               Elizabeth
                             </h5>
                             <p>CO / founder</p>
-                            <div class="man">
+                            <div class="person">
                               <img src="/assets/img/Winners5.png" alt="man-img">
                             </div>
 
@@ -1008,18 +1045,18 @@
                               Effortless Experience
                             </h5>
                             <p class="text-white p-2">
-                              "Leaving a testimonial on Bid-It was a truly effortless experience. The platform is
+                              "Leaving a testimonial on BidBay was a truly effortless experience. The platform is
                               intuitive and streamlined, allowing
                               me to quickly and easily share my positive experience with others. I highly recommend this
                               testimonial service to anyone
-                              looking to share their thoughts on Bid-It."
+                              looking to share their thoughts on BidBay."
                             </p>
 
                             <h5 class="name">
                               James
                             </h5>
                             <p>CO / founder</p>
-                            <div class="man">
+                            <div class="person">
                               <img src="/assets/img/Winners5.png" alt="man-img">
                             </div>
 
@@ -1050,18 +1087,18 @@
                               Quick and Convenient
                             </h5>
                             <p class="text-white p-2">
-                              "Leaving a testimonial on Bid-It was quick and convenient. The platform is user-friendly
+                              "Leaving a testimonial on BidBay was quick and convenient. The platform is user-friendly
                               and makes it easy for anyone to
                               share their thoughts. I was impressed by the speed and accuracy of the testimonial service
                               and would definitely
-                              recommend it to others looking to share their experiences on Bid-It."
+                              recommend it to others looking to share their experiences on BidBay."
                             </p>
 
                             <h5 class="name">
                               Meredith
                             </h5>
                             <p>Founder</p>
-                            <div class="man">
+                            <div class="person">
                               <img src="/assets/img/Winners5.png" alt="man-img">
                             </div>
 
@@ -1097,17 +1134,17 @@
                               Smooth and Simple
                             </h5>
                             <p class="text-white p-2">
-                              "The testimonial service at Bid-It is incredibly smooth and simple. I was able to quickly
+                              "The testimonial service at BidBay is incredibly smooth and simple. I was able to quickly
                               leave feedback for a seller
                               and my testimonial was delivered instantly. The platform is designed with the user in mind
                               and makes it easy to share
-                              your thoughts on Bid-It."
+                              your thoughts on BidBay."
                             </p>
                             <h5 class="name">
                               Valentina
                             </h5>
                             <p>Founder</p>
-                            <div class="man">
+                            <div class="person">
                               <img src="/assets/img/Winners5.png" alt="man-img">
                             </div>
 
@@ -1136,7 +1173,7 @@
                               A Breeze to Use
                             </h5>
                             <p class="text-white p-2">
-                              "Leaving a testimonial on Bid-It was a breeze! The platform is user-friendly and makes it
+                              "Leaving a testimonial on BidBay was a breeze! The platform is user-friendly and makes it
                               easy for anyone to quickly and
                               easily share their thoughts. I was impressed by the speed and accuracy of the testimonial
                               service and would definitely
@@ -1146,7 +1183,7 @@
                               Charlie
                             </h5>
                             <p>CEO/ Founder</p>
-                            <div class="man">
+                            <div class="person">
                               <img src="/assets/img/Winners5.png" alt="man-img">
                             </div>
 
@@ -1176,11 +1213,11 @@
                               Streamlined and User-Friendly
                             </h5>
                             <p class="text-white p-2">
-                              "The testimonial service at Bid-It is both streamlined and user-friendly. I was able to
+                              "The testimonial service at BidBay is both streamlined and user-friendly. I was able to
                               quickly leave feedback for a
                               seller and my testimonial was delivered almost instantly. The platform is designed to make
                               it easy for users to share
-                              their experiences on Bid-It."
+                              their experiences on BidBay."
                             </p>
 
                             <h5 class="name">
@@ -1188,7 +1225,7 @@
                             </h5>
                             <p>CEO / Founder</p>
 
-                            <div class="man">
+                            <div class="person">
                               <img src="/assets/img/Winners5.png" alt="man-img">
                             </div>
 
@@ -1219,15 +1256,15 @@
         <div class="section-header section-center wow fadeInDown"
           style="visibility: visible; animation-name: fadeInDown;">
           <div class="py-5">
-            <h1 class="display-5 fw-bold  text-center text-white">Meet the Bid-It Management Team </h1>
+            <h1 class="display-5 fw-bold  text-center text-white">Meet the BidBay Management Team </h1>
 
-            <p class="fs-5 text-light mb-4">Bid-It is more than just an auction platform, it's a team of dedicated
+            <p class="fs-5 text-light mb-4">BidBay is more than just an auction platform, it's a team of dedicated
               individuals who are passionate about making the
-              bidding process simple, exciting, and accessible to everyone. Get to know the visionaries behind Bid-It
+              bidding process simple, exciting, and accessible to everyone. Get to know the visionaries behind BidBay
               and meet our
               talented management team. Our team members bring a wealth of knowledge and experience to the table, and
               their expertise
-              has been instrumental in the success of Bid-It. From product development to customer support, the Bid-It
+              has been instrumental in the success of BidBay. From product development to customer support, the BidBay
               management team
               is committed to providing a top-notch bidding experience for our users. Discover the people behind the
               platform and
@@ -1249,11 +1286,11 @@
                   Innovator
                 </span>
                 <p class="text-white">
-                  Jack, The Innovator, is the visionary behind the evolution of Bid-It. He leverages his technology
+                  Jack, The Innovator, is the visionary behind the evolution of BidBay. He leverages his technology
                   background and
                   user-centered approach to design and develop the platform. With his passion for innovation, Jack has
                   played a critical
-                  role in transforming Bid-It into what it is today, setting the stage for its continued growth and
+                  role in transforming BidBay into what it is today, setting the stage for its continued growth and
                   success.
                 </p>
               </div>
@@ -1266,11 +1303,11 @@
                     Co-Founder, CEO
                   </span>
                   <p>
-                    Jack, The Innovator, is the visionary behind the evolution of Bid-It. He leverages his technology
+                    Jack, The Innovator, is the visionary behind the evolution of BidBay. He leverages his technology
                     background and
                     user-centered approach to design and develop the platform. With his passion for innovation, Jack has
                     played a critical
-                    role in transforming Bid-It into what it is today, setting the stage for its continued growth and
+                    role in transforming BidBay into what it is today, setting the stage for its continued growth and
                     success.
                   </p>
                   <ul class="social">
@@ -1313,7 +1350,7 @@
                   The Customer Champion
                 </span>
                 <p class="text-white">
-                  Sarah, The Customer Champion, is the backbone of Bid-It's user experience. With her background in
+                  Sarah, The Customer Champion, is the backbone of BidBay's user experience. With her background in
                   customer service,
                   Sarah leads the support team and strives to provide an unparalleled bidding experience for all users.
                   Her passion for
@@ -1331,7 +1368,7 @@
                     The Customer Champion
                   </span>
                   <p class="text-white">
-                    Sarah, The Customer Champion, is the backbone of Bid-It's user experience. With her background in
+                    Sarah, The Customer Champion, is the backbone of BidBay's user experience. With her background in
                     customer service,
                     Sarah leads the support team and strives to provide an unparalleled bidding experience for all
                     users. Her passion for
@@ -1379,11 +1416,11 @@
                   The Numbers Wizard
                 </span>
                 <p class="text-white">
-                  David is the mastermind behind the financial success of Bid-It. With a background in finance, [Name]
+                  David is the mastermind behind the financial success of BidBay. With a background in finance, [Name]
                   is responsible for
                   managing our budget, tracking our growth, and ensuring that we are making smart financial decisions.
                   [Name]'s expertise
-                  and attention to detail have been essential in helping Bid-It achieve its financial goals.
+                  and attention to detail have been essential in helping BidBay achieve its financial goals.
                 </p>
               </div>
               <div class="content-cover">
@@ -1395,13 +1432,13 @@
                     The Numbers Wizard
                   </span>
                   <p class="text-white">
-                    David is the mastermind behind the financial success of Bid-It. With a background in finance, [Name]
+                    David is the mastermind behind the financial success of BidBay. With a background in finance, [Name]
                     is responsible
                     for
                     managing our budget, tracking our growth, and ensuring that we are making smart financial decisions.
                     [Name]'s
                     expertise
-                    and attention to detail have been essential in helping Bid-It achieve its financial goals.
+                    and attention to detail have been essential in helping BidBay achieve its financial goals.
                   </p>
                   <ul class="social">
                     <li>
@@ -1444,13 +1481,13 @@
                 </span>
 
                 <p class="text-white">
-                  Emily is the driving force behind Bid-It's marketing initiatives and branding efforts. With her
+                  Emily is the driving force behind BidBay's marketing initiatives and branding efforts. With her
                   extensive background in
                   marketing, Emily is responsible for crafting and executing effective marketing strategies that
                   captivate our users and
-                  spotlight the unique features of the Bid-It platform. Her passion for design and marketing is evident
+                  spotlight the unique features of the BidBay platform. Her passion for design and marketing is evident
                   in every marketing
-                  campaign, elevating Bid-It's brand and setting it apart from the competition.
+                  campaign, elevating BidBay's brand and setting it apart from the competition.
                 </p>
               </div>
               <div class="content-cover">
@@ -1462,14 +1499,14 @@
                     The Marketing Maverick
                   </span>
                   <p class="text-white">
-                    Emily is the driving force behind Bid-It's marketing initiatives and branding efforts. With her
+                    Emily is the driving force behind BidBay's marketing initiatives and branding efforts. With her
                     extensive background in
                     marketing, Emily is responsible for crafting and executing effective marketing strategies that
                     captivate our users and
-                    spotlight the unique features of the Bid-It platform. Her passion for design and marketing is
+                    spotlight the unique features of the BidBay platform. Her passion for design and marketing is
                     evident
                     in every marketing
-                    campaign, elevating Bid-It's brand and setting it apart from the competition.
+                    campaign, elevating BidBay's brand and setting it apart from the competition.
                   </p>
                   <ul class="social">
                     <li>
@@ -1511,11 +1548,11 @@
                   The Operations Oracle
                 </span>
                 <p class="text-white">
-                  Brian is the driving force behind the seamless operations of Bid-It. With a background in operations
+                  Brian is the driving force behind the seamless operations of BidBay. With a background in operations
                   management, Brian
                   is responsible for ensuring that the platform runs smoothly and efficiently. His attention to detail
                   and commitment to
-                  excellence has been essential in making Bid-It the premier auction platform.
+                  excellence has been essential in making BidBay the premier auction platform.
                 </p>
               </div>
               <div class="content-cover">
@@ -1527,11 +1564,11 @@
                     The Operations Oracle
                   </span>
                   <p class="text-white">
-                    Brian is the driving force behind the seamless operations of Bid-It. With a background in operations
+                    Brian is the driving force behind the seamless operations of BidBay. With a background in operations
                     management, Brian
                     is responsible for ensuring that the platform runs smoothly and efficiently. His attention to detail
                     and commitment to
-                    excellence has been essential in making Bid-It the premier auction platform.
+                    excellence has been essential in making BidBay the premier auction platform.
                   </p>
                   <ul class="social">
                     <li>
@@ -1573,11 +1610,11 @@
                   The Technical Titan
                 </span>
                 <p class="text-white">
-                  Tom is the technical mastermind behind Bid-It. With his extensive background in software engineering,
+                  Tom is the technical mastermind behind BidBay. With his extensive background in software engineering,
                   Tom is responsible
                   for developing and maintaining the platform's technology infrastructure. His expertise and passion for
                   technology have
-                  been instrumental in keeping Bid-It at the forefront of innovation.
+                  been instrumental in keeping BidBay at the forefront of innovation.
                 </p>
               </div>
               <div class="content-cover">
@@ -1589,11 +1626,11 @@
                     The Technical Titan
                   </span>
                   <p class="text-white">
-                    Tom is the technical mastermind behind Bid-It. With his extensive background in software
+                    Tom is the technical mastermind behind BidBay. With his extensive background in software
                     engineering, Tom is responsible
                     for developing and maintaining the platform's technology infrastructure. His expertise and passion
                     for technology have
-                    been instrumental in keeping Bid-It at the forefront of innovation.
+                    been instrumental in keeping BidBay at the forefront of innovation.
                   </p>
                   <ul class="social">
                     <li>
@@ -1634,11 +1671,11 @@
           </div>
           <div class="content">
             <h4 class="text-white p-3">
-              Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
+              Get to Know the Visionaries Behind BidBay: Meet Our Management Team
             </h4>
             <form action="#" class="newsletter-form">
               <input type="email" placeholder="Enter Your Email" class="form-input">
-              <button type="submit" class="cmn--btn">Subscribe</button>
+              <button type="submit" class="bid-btn">Subscribe</button>
             </form>
           </div>
         </div>
@@ -1651,10 +1688,12 @@
   <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
   <div id="footer"></div>
   <!--=========  FOOTER SECTION  ENDS ======== -->
+  <script src="/layout/commons.js" defer></script>
+  <script src="/src/js/logout.js" defer></script>
+  <script src="/src/js/serch.js" defer></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 
-<script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/layout/commons.js" defer></script>
-<script src="/src/views/logout.js" defer></script>
 
 </body>
 

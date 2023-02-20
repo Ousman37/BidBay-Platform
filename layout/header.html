@@ -1,66 +1,6 @@
-<!-- Header -->
-<header class="top-heder">
-    <div class="container">
-      <div class="header-top-wrapper">
-        <ul class="header-top-left">
-          <li>
-            <div class="icon text-white">
-              <i class="fas fa-message"></i>
-            </div>
-            <a href="#0"> info@Bid-It.com </a>
-          </li>
-          <li>
-            <div class="icon text-white">
-              <i class="fas fa-phone"></i>
-            </div>
-            <a href="#0"> +47 45540443 </a>
-          </li>
-        </ul>
-        <div class="header-top-right">
-          <ul class="social">
-            <li>
-              <a href="#0" class="icon">
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#0" class="icon">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#0" class="icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#0" class="icon">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-          <a
-            href="/src/public/login.html"
-            class="btn-cta login-btn mypopup"
-            id="login-link"
-            >Login</a
-          >
-          <a
-            href="/src/public/register.html"
-            id="register-link"
-            class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
-            <i class="fas fa-circle-user"></i> Register</a
-          >
-          <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a
-          >
-        </div>
-      </div>
-    </div>
-  </header>
-  
   <!-- NavBar -->
   <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">
         <h1 class="fw-bold">BidBay.com</h1>
       </a>
@@ -90,18 +30,27 @@
             <a class="nav-link" href="/src/public/view-credit.html" id="view-credits-link">View Credits</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/src/public/media-gallery.html">Add product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/public/bid_listing.html">Place a Bid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Auction Catalog</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Auction Catalog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Help</a>
           </li>
   
-          <button type="button" class="btn btn-add-sell btn-sm">
+          <a href="/src/public/watch-to-sell.html" class="btn btn-add-sell btn-sm">
             Want to sell?
-          </button>
-          <button type="button" class="btn btn-add-cart btn-sm">
+          </a>
+          <a href="/src/public/watch-to-sell.html" class="btn btn-add-cart btn-sm">
             <i class="fa-solid fa-cart-arrow-down"></i> Add to Cart
-          </button>
+          </a>
   
           <li class="search-icon d-flex justify-content-end">
             <a href="#search" class="search">
@@ -132,25 +81,3 @@
       </div>
     </div>
   </nav>
-
-  <script>
-// Working for the Sessions and User login or Register..
-const user = localStorage.getItem('authLogin');
-const logoutBtn = document.getElementById('logout-link');
-const registerBtn = document.getElementById('register-link');
-const loginBtn =  document.getElementById('login-link');
-
-alert(user);
-
-if (!user) {
-    logoutBtn.style.display = 'none';
-    loginBtn.style.display = 'visible';
-    registerBtn.style.display = 'visible';
-}
-
-if (user) {
-    loginBtn.style.display = 'none';
-    registerBtn.style.display = 'none';
-    logoutBtn.style.display = 'visible';
-}
-  </script>
