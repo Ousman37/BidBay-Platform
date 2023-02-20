@@ -1,61 +1,340 @@
-/* !About section  stylers for the about page */
-.about-section-two {
+/* About Section */
+.about-section {
+ 
+  margin-top: 5rem;
   padding: 80px 0;
-  background-color: #111;
+  .breadcumnd-content {
+    .text-white {
+      color: #fff;
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .bread-link {
+      display: flex;
+      align-items: center;
+      li {
+        color: #fff;
+        font-size: 18px;
+        &:last-of-type {
+          i {
+            margin: 0 10px;
+          }
+        }
+      }
+      a {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+  }
+  .breadcumnd-thumb img {
+    width: 100%;
+  }
+}
+
+/* About Section Two */
+.about-section-two {
+  background-color: #0a0a0ace;
+  padding: 80px 0;
   .about-thumb {
     img {
       width: 100%;
-      max-width: 500px;
-      display: block;
-      margin: 0 auto;
     }
   }
   .about-content {
-    ul {
+    .section-header {
+      margin-bottom: 40px;
+      h2 {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 600;
+      }
+    }
+    .fast-support {
       li {
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         .icon {
           margin-right: 20px;
           img {
-            width: 40px;
+            width: 50px;
           }
         }
         .cont {
           h5 {
             color: #fff;
-            font-size: 20px;
+            font-size: 24px;
+            font-weight: 600;
             margin-bottom: 10px;
           }
           p {
             color: #fff;
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.8;
           }
         }
       }
     }
   }
-  @media (min-width: 900px) {
-    .about-thumb {
-      img {
-        max-width: 40%;
+}
+
+/* Features Section */
+.features_section {
+  padding: 80px 0;
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    .card-img-top {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .card-body {
+      padding: 20px;
+      .badge {
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 10px;
+        &.bg-success {
+          background-color: #28a745;
+          color: #fff;
+        }
+      }
+      .text-danger {
+        font-size: 20px;
+        margin-left: auto;
+      }
+      .card-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+        a {
+          color: #222222;
+          &:hover {
+            color: #28a745;
+          }
+        }
       }
     }
   }
-  @media (min-width: 1124px) {
-    .about-thumb {
-      img {
-        max-width: 500px;
-      }
+}
+// Responsive styles for screens wider than 1124px
+@media (min-width: 1124px) {
+  .about-section {
+    padding: 100px 0;
+  }
+
+  .about-section-two {
+    padding: 100px 0;
+  }
+
+  .features_section {
+    padding: 100px 0;
+  }
+
+  .about-content {
+    padding-left: 50px;
+  }
+
+  .about-thumb img {
+    width: 100%;
+  }
+}
+
+// Responsive styles for screens between 900px and 1123px
+@media (min-width: 900px) and (max-width: 1123px) {
+  .about-section {
+    padding: 80px 0;
+  }
+
+  .about-section-two {
+    padding: 80px 0;
+  }
+
+  .features_section {
+    padding: 80px 0;
+  }
+
+  .about-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about-thumb img {
+    width: 100%;
+  }
+}
+
+// Responsive styles for screens between 800px and 899px
+@media (min-width: 800px) and (max-width: 899px) {
+  .about-section {
+    padding: 60px 0;
+  }
+
+  .about-section-two {
+    padding: 60px 0;
+  }
+
+  .features_section {
+    padding: 60px 0;
+  }
+
+  .about-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-thumb img {
+    width: 100%;
+  }
+
+  .breadcumnd-thumb img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+// Responsive styles for screens smaller than 800px
+@media (max-width: 799px) {
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .about-section-two {
+    padding: 40px 0;
+  }
+
+  .features_section {
+    padding: 40px 0;
+  }
+
+  .about-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-thumb img {
+    width: 100%;
+  }
+
+  .breadcumnd-thumb img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .fast-support li {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.bread-link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+
+    &:not(:last-child)::after {
+      content: '\f101';
+      font-family: 'Font Awesome 6 Solid';
+      font-size: 10px;
+      margin: 0 10px;
+      color: #333;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
     }
   }
-  @media (max-width: 800px) {
-    .about-thumb {
-      img {
-        max-width: 70%;
-      }
+
+  @media screen and (max-width: 800px) {
+    font-size: 12px;
+
+    li:not(:last-child)::after {
+      margin: 0 5px;
     }
   }
-} 
+
+  @media screen and (max-width: 600px) {
+    font-size: 10px;
+
+    li:not(:last-child)::after {
+      margin: 0 3px;
+    }
+  }
+}
+
+// /* !About section  stylers for the about page */
+// .about-section-two {
+//   padding: 80px 0;
+//   background-color: rgba(0, 51, 102, 0.9);
+//   .about-thumb {
+//     img {
+//       width: 100%;
+//       max-width: 500px;
+//       display: block;
+//       margin: 0 auto;
+//     }
+//   }
+//   .about-content {
+//     ul {
+//       li {
+//         display: flex;
+//         align-items: center;
+//         margin-bottom: 20px;
+//         .icon {
+//           margin-right: 20px;
+//           img {
+//             width: 40px;
+//           }
+//         }
+//         .cont {
+//           h5 {
+//             color: #fff;
+//             font-size: 20px;
+//             margin-bottom: 10px;
+//           }
+//           p {
+//             color: #fff;
+//             font-size: 16px;
+//             line-height: 1.8;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   @media (min-width: 900px) {
+//     .about-thumb {
+//       img {
+//         max-width: 40%;
+//       }
+//     }
+//   }
+//   @media (min-width: 1124px) {
+//     .about-thumb {
+//       img {
+//         max-width: 500px;
+//       }
+//     }
+//   }
+//   @media (max-width: 800px) {
+//     .about-thumb {
+//       img {
+//         max-width: 70%;
+//       }
+//     }
+//   }
+// }
