@@ -1,0 +1,40 @@
+name: BidBay-Platform Workflow
+
+on:
+  push:
+    branches: [main, development]
+
+jobs:
+  build-and-transpile:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' # only run on the main branch
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm install
+    - name: Build CSS
+      run: npm run build
+    - name: Transpile JavaScript
+      run: npm run transpile
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm install
+    - name: Run ESLint
+      run: npm run lint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Go environment
+      uses: actions/setup-go@v3.5.0
+      with:
+        go-version: 1.17 # replace with the Go version you want to use
+    - name: Install dependencies
+      run: go mod download
+    - name: Run tests
+      run: go test ./...
