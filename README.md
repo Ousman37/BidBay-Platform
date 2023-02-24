@@ -93,6 +93,16 @@ We welcome contributions to BidBay! If you would like to contribute to the proje
 
 This project was created by Ethmane Didi as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
 
+## About Me
+
+I am Ethmane, a front-end developer student currently in my final year of studies. This project was created as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
+
+I'm passionate about creating beautiful and functional websites that provide a great user experience. Currently, I'm looking for a job opportunity or small project where I can further develop my skills and gain practical experience in the field.
+
+In addition to my technical skills, I have excellent communication and problem-solving abilities, and I enjoy working collaboratively in a team environment. If you're interested in working with me or have any questions, please feel free to reach out at Ousman.didibela@gmail.com. I'd be happy to hear from you!
+
+
+
 ## License
 
 This project is licensed under the MIT License.
