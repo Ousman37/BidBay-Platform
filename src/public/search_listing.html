@@ -5,14 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/create-listing.css">
+  <meta name="description"
+    content="Find the best deals on BidBay. Search our listings for a wide variety of products and services. Bid or buy now and save big!">
+
+  <link rel="stylesheet" href="/dist/css/search-listings.css">
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>Bid on Listing</title>
+
   <script src="../js/authDecision.js" defer></script>
 
-
+  <title>Search Listings | BidBay </title>
 </head>
 
 <body class="bg-primary">
@@ -58,21 +61,11 @@
                 </a>
               </li>
             </ul>
-            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link"
-              >Login</a
-            >
-            <a
-              href="register.html"
-              id="registerLink"
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
               class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
-              <i class="fas fa-circle-user"></i> Register</a
-            >
-            <a
-              class="btn-cta logout-btn mypopup"
-              id="logout-link"
-              onclick="onLogout()"
-              >Logout</a
-            >
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
           </div>
         </div>
       </div>
@@ -82,32 +75,32 @@
 
   <main>
     <!--========= Create Listing  SECTION   ======== -->
-    <Section class="Create-listing">
-      <div class="container mt-5">
-
-        <h2>Search Listings</h2>
-        <form class="form-group">
-          <label for="keywords">Keywords:</label>
-          <input type="text" class="form-control" id="keywords" />
-          <label for="minPrice">Minimum Price:</label>
-          <input type="number" class="form-control" id="minPrice" />
-          <label for="maxPrice">Maximum Price:</label>
-          <input type="number" class="form-control" id="maxPrice" />
-          <button type="submit" class="btn btn-primary">Search</button>
+    <section class="search-listing-page">
+      <div class="container">
+        <form class="search-bar">
+          <input type="text" placeholder="Enter keywords...">
+          <button type="submit">Search</button>
         </form>
-        <div class="card">
-          <img class="card-img-top" src="#" alt="Listing Image" />
-          <div class="card-body">
-            <h3 class="card-title">Listing Title</h3>
-            <p class="card-text">Listing Description</p>
-            <a href="#" class="btn btn-primary">View Listing</a>
-          </div>
+        <div class="filter-options">
+          <label class="text-white">Filter by:</label>
+          <select>
+            <option value="category">Category</option>
+            <option value="price">Price</option>
+            <option value="rating">Rating</option>
+          </select>
         </div>
-
+        <div class="search-results">
+          <h2 class="text-white">Search Results:</h2>
+          <ul>
+            <li class="text-white">Result 1</li>
+            <li class="text-white">Result 2</li>
+            <li class="text-white">Result 3</li>
+          </ul>
+        </div>
       </div>
-    </Section>
 
-    <!--=========  STARTED    SECTION  TEAM ENDS   ======== -->
+    </section>
+
     <!--=========  NEWS LETTER SECTION  ======== -->
     <section class="newsletter-section">
       <div class="container">

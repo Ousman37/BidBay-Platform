@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Create a new listing on our website and share your product or service with our community. Our user-friendly platform makes it easy to upload photos, write a detailed description, and set your own price. Start selling today!">
   <link rel="stylesheet" href="/dist/css/create-listing.css">
 
+    <script src="../js/authDecision.js" defer></script>
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>Create Listing</title>
-  <script src="../js/authDecision.js" defer></script>
 
+  <title>Create Listing | BidBay</title>
 </head>
 
 <body class="bg-primary">
@@ -57,21 +59,11 @@
                 </a>
               </li>
             </ul>
-            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link"
-              >Login</a
-            >
-            <a
-              href="register.html"
-              id="registerLink"
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
               class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
-              <i class="fas fa-circle-user"></i> Register</a
-            >
-            <a
-              class="btn-cta logout-btn mypopup"
-              id="logout-link"
-              onclick="onLogout()"
-              >Logout</a
-            >
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
           </div>
         </div>
       </div>
@@ -86,13 +78,13 @@
         <h2 class="text-center mb-5">Create Listing</h2>
         <form class="form-group">
           <label for="title">Title:</label>
-          <input type="text" class="form-control" id="title" />
+          <input type="text" class="form-control" id="title" required />
           <label for="description">Description:</label>
           <textarea class="form-control" id="description"></textarea>
           <label for="price">Price:</label>
-          <input type="number" class="form-control" id="price" />
+          <input type="number" class="form-control" id="price" required />
           <label for="image">Image:</label>
-          <input type="file" class="form-control-file" id="image" />
+          <input type="file" class="form-control-file" id="image" required/>
           <button type="submit" class="btn btn-primary">Create Listing</button>
         </form>
       </div>

@@ -5,12 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Find great deals and bid on your favorite products at BidBay. Explore our wide selection of items and start bidding today.">
+
   <link rel="stylesheet" href="./dist/css/index.css">
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>Welcome To BidBay | Home </title>
+
+
+
+
+
+  <script defer src="/src/js/countdownTime.js"></script>
+  <!-- <script defer src="/src/js/serch.js"></script> -->
+
+  <script defer src="/layout/commons.js"></script>
+  <script defer src="/src/js/logout.js"></script>
+
   <script src="/src/js/authDecision.js" defer></script>
+  <title>Welcome To Homepage  | BidBay </title>
+
+
+
 
 </head>
 
@@ -18,7 +35,7 @@
   <div class="fixed-top bg-primary">
     <!-- --------------------- COMMONS HEADER --------------------- -->
     <header class="top-heder">
-      <div class="container-fluid">
+      <div class="container">
         <div class="header-top-wrapper">
           <ul class="header-top-left">
             <li>
@@ -34,6 +51,7 @@
               <a href="#0"> +47 45540443 </a>
             </li>
           </ul>
+
           <div class="header-top-right">
             <ul class="social">
               <li>
@@ -60,7 +78,7 @@
 
             <a href="/src/public/login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
             <a href="/src/public/register.html" id="registerLink"
-              class="btn-cta bid-btn cd-popup-trigger register-btn register-link">
+              class="btn-cta bid-btn cd-popup-trigger user-register-btn register-link">
               <i class="fas fa-circle-user"></i> Register</a>
             <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
           </div>
@@ -72,8 +90,8 @@
   <!--========= NVA BAR SECTION ENDS  ======== -->
 
   <main>
-    <!--========= HERO  SECTION   ======== -->
-    <section class="hero">
+    <!--========= HERO  FEATURES SECTION   ======== -->
+    <section class="hero-section">
       <div class="container">
         <div class="row">
           <!-- Text -->
@@ -82,15 +100,17 @@
             <div class="heading">
               <!-- Heading -->
               <h1 class="display-3 mb-10 text-white text-center text-md-start">
-                Win the Bid, Win the Item- Join <span class="text-white"> BidBay </span> Today.
+                Welcome to Our Online Marketplace Sell or Make bid Win the Bid, Win the Item- Join <span
+                  class="text-white"> BidBay </span> Today.
 
               </h1>
 
               <!-- Text -->
-              <p class="lead text-center text-md-start text-muted mb-6 mb-lg-8">
+              <p class="lead fs-2 text-center text-md-start text-muted mb-6 mb-lg-8">
                 Get the Best Deals and Sell with Ease on BidBay.
               </p>
-              <p class="text-light">Join BidBay, the premier auction platform, and experience the thrill of bidding and
+              <p class="text-light text-md-start fs-3">Join BidBay, the premier auction platform, and experience the
+                thrill of bidding and
                 winning the items
                 you want. With our
                 easy-to-use platform, you can find the best deals on a variety of products and sell your own items with
@@ -101,7 +121,7 @@
             </div>
 
             <!-- Buttons -->
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
+            <div class="d-grid gap-2 d-sm-flex text-md-start justify-content-sm-evenly">
               <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Signup Now <i
                   class="fa-solid fa-right-to-bracket"></i></button>
 
@@ -199,7 +219,7 @@
                       <a href="#" class="text-danger"><i class="fas fa-heart"></i></a>
                     </div>
                     <!-- Title -->
-                    <p class="card-title fw-normal"><a href="#">World Wide Free Shipping </a></p>
+                    <p class="card-title  fw-normal"><a href="#">World Wide Free Shipping </a></p>
                   </div>
                 </div>
               </div>
@@ -243,8 +263,9 @@
                 <img src="./assets/img/writing.png" alt="" style="border-radius: 5%">
               </div>
               <div class="lh-1">
-                <h2 class="text-light mb-1">Sign Up for No Cost</h2>
-                <p class="text-light">Join the BidBay community today by signing up for a free account. The registration
+                <h2 class="text-light mb-2 fw-bold fs-1 ">Sign Up for No Cost</h2>
+                <p class="text-light fs-3">Join the BidBay community today by signing up for a free account. The
+                  registration
                   process is quick
                   and
                   easy, allowing you to start bidding in no time.</p>
@@ -257,8 +278,9 @@
                 <img src="./assets/img/add-to-cart.png" alt="" style="border-radius: 5%">
               </div>
               <div class="lh-1">
-                <h2 class=" text-light mb-1">Get in on the Action</h2>
-                <p class="text-light mb-1">To participate in our exciting auction experiences, simply sign up for a free
+                <h2 class=" text-light mb-3 fw-bold fs-1">Get in on the Action</h2>
+                <p class="text-light mb-1 fs-3">To participate in our exciting auction experiences, simply sign up for a
+                  free
                   account. It's quick and
                   easy, taking only a few clicks to get started.</p>
               </div>
@@ -270,8 +292,8 @@
                 <img src="./assets/img/auction.png" alt="" style="border-radius: 5%">
               </div>
               <div class="lh-1">
-                <h2 class="text-light mb-1">Submit a Bid on BidBay</h2>
-                <p class="text-light">To get started with BidBay auction, you'll need to sign up. Our registration
+                <h2 class="text-light mb-3 fw-bold fs-1">Submit a Bid on BidBay</h2>
+                <p class="text-light fs-3">To get started with BidBay auction, you'll need to sign up. Our registration
                   process is quick and
                   easy,
                   and best of all - it's completely free! Simply follow a few steps and you'll be ready to start bidding
@@ -286,8 +308,9 @@
                 <img src="./assets/img/success.png" alt="" style="border-radius: 5%">
               </div>
               <div class="lh-1">
-                <h2 class="text-light   mb-1">Get Ready to Win</h2>
-                <p class="text-light">Join the thrill of bidding on BidBay by registering now. With just a few clicks,
+                <h2 class="text-light fw-bold  mb-3 fs-1">Get Ready to Win</h2>
+                <p class="text-light fs-3">Join the thrill of bidding on BidBay by registering now. With just a few
+                  clicks,
                   you can become a
                   part of
                   our auction community for free! Get ready to win and have fun!</p>
@@ -298,26 +321,21 @@
       </div>
     </section>
     <!--========= GET STARTED    SECTION ENDS ======== -->
-    <section class="get-started_section d-flex flex-nowrap justify-content-around">
+    <section class="auctions-started-section d-flex flex-nowrap justify-content-around">
       <div class="container">
         <div class="tab-content" id="course-pills-tabContent">
-
-          <div class="py-5">
-            <h1 class="display-5 fw-bold  text-center text-white">Latest Auctions on BidBay
-              Understanding </h1>
-
-            <p class="fs-5 text-light mb-4">Stay up-to-date with the latest and greatest auctions available on BidBay.
-              Whether you're looking for antiques,
-              collectibles, or just a great deal, we have it all! Browse our extensive selection of items and start
-              bidding now.
-            </p>
-            <p class="fs-5 text-light mb-4">At BBidBay, we're passionate about providing a seamless and enjoyable
-              bidding
-              experience for our users.
-              Our platform is
-              user-friendly and intuitive, making it easy for you to find what you're looking for and place your bids
-              with confidence.
-              Join us now and start winning!</p>
+          <div class="py-5 d-flex justify-content-center align-items-center flex-column">
+            <h1 class="display-5 fw-bold text-center text-white">Latest Auctions on BidBay Understanding</h1>
+            <p class="fs-5 text-light mb-4 text-center">Stay up-to-date with the latest and greatest auctions available
+              on
+              BidBay. Whether you're looking for antiques, collectibles, or just a great deal, we have it all! Browse
+              our
+              extensive selection of items and start bidding now.</p>
+            <p class="fs-5 text-light mb-4 text-center">At BidBay, we're passionate about providing a seamless and
+              enjoyable
+              bidding experience for our users. Our platform is user-friendly and intuitive, making it easy for you to
+              find what
+              you're looking for and place your bids with confidence. Join us now and start winning!</p>
           </div>
         </div>
 
@@ -335,20 +353,20 @@
                 <!-- Card body -->
                 <div class="card-body pb-0">
                   <!-- Title -->
-                  <p class="card-title text-white fw-normal"><a href="#">Iphone 14 prr max</a></p>
+                  <p class="card-title text-white fw-bold fs-1"><a href="#">Iphone 14 prr max</a></p>
                 </div>
                 <hr class="my-0">
                 <div class="card-body pb-0">
                   <div class="number d-flex justify-content-between">
                     <p><a href="#!" class="text-light">Current Bid:</a></p>
-                    <p class="text-light">Ends In:</p>
+                    <p class="text-light countdown">Ends In:</p>
                   </div>
                 </div>
 
                 <div class="card-body pb-0">
                   <div class="d-flex justify-content-between">
                     <p><a href="#!" class="text-dark"></a></p>
-                    <p class="small text-pink">00 00 00</p>
+                    <p class="small text-pink" id="countdown">00 00 00</p>
                   </div>
                   <p class="small text-info">$14,750 (USD)</p>
 
@@ -356,7 +374,7 @@
                 <hr class="my-0">
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
-                    <a href="#!" class="text-dark fw-bold">Cancel</a>
+                    <a href="#!" class="text-white fw-bold">Cancel</a>
                     <button type="button" class="btn btn-primary align-items-center">Submit A Bid</button>
                   </div>
                 </div>
@@ -372,7 +390,7 @@
                 <!-- Card body -->
                 <div class="card-body pb-0">
                   <!-- Title -->
-                  <p class="card-title text-white fw-normal"><a href="#">Headphone Bluetooth 5.0 Earphone</a></p>
+                  <p class="card-title text-white fw-bold fs-1"><a href="#">Headphone Bluetooth 5.0 Earphone</a></p>
                 </div>
                 <hr class="my-0">
                 <div class="card-body pb-0">
@@ -385,7 +403,7 @@
                 <div class="card-body pb-0">
                   <div class="number d-flex justify-content-between">
                     <p><a href="#!" class="text-dark"></a></p>
-                    <p class="small text-info">00 00 00</p>
+                    <p class="small text-info" id="countdown">00 00 00</p>
                   </div>
                   <p class="small text-info">$14,750 (USD)</p>
 
@@ -393,7 +411,7 @@
                 <hr class="my-0">
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
-                    <a href="#!" class="text-dark fw-bold">Cancel</a>
+                    <a href="#!" class="text-white fw-bold">Cancel</a>
                     <button type="button" class="btn btn-primary align-items-center">Submit A Bid</button>
                   </div>
                 </div>
@@ -410,7 +428,7 @@
                 <!-- Card body -->
                 <div class="card-body pb-0">
                   <!-- Title -->
-                  <p class="card-title text-white fw-normal"><a href="#">Portrait of Claudine van </a></p>
+                  <p class="card-title text-white fw-bold fs-1"><a href="#">Portrait of Claudine van </a></p>
                 </div>
                 <hr class="my-0">
                 <div class="card-body pb-0">
@@ -423,7 +441,7 @@
                 <div class="card-body pb-0">
                   <div class="number d-flex justify-content-between">
                     <p><a href="#!" class="text-dark"></a></p>
-                    <p class="small text-pink">00 00 00</p>
+                    <p class="small text-pink" id="countdown">00 00 00</p>
                   </div>
                   <p class="small text-info">$14,750 (USD)</p>
 
@@ -431,7 +449,7 @@
                 <hr class="my-0">
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
-                    <a href="#!" class="text-dark fw-bold">Cancel</a>
+                    <a href="#!" class="text-white fw-bold">Cancel</a>
                     <button type="button" class="btn btn-primary align-items-center">Submit A Bid</button>
                   </div>
                 </div>
@@ -443,12 +461,12 @@
             <div class="col-sm-6 col-lg-4 col-xl-3">
               <div class="card shadow h-100">
                 <!-- Image -->
-                <img src="./assets/img/pat-taylor.jpg" class="card-img-top" alt="24/7 Online Support icon">
+                <img src="./assets/img/pat-taylor.jpg" class="card-img-top" alt="watch-image">
 
                 <!-- Card body -->
                 <div class="card-body pb-0">
                   <!-- Title -->
-                  <p class="card-title text-white fw-normal"><a href="#">Iphone 14 prr max</a></p>
+                  <p class="card-title text-white fw-bold fs-1"><a href="#">Luxury watch</a></p>
                 </div>
                 <hr class="my-0">
                 <div class="card-body pb-0">
@@ -461,7 +479,7 @@
                 <div class="card-body pb-0">
                   <div class="number d-flex justify-content-between">
                     <p><a href="#!" class="text-dark"></a></p>
-                    <p class="small  text-pink">00 00 00</p>
+                    <p class="small  text-pink" id="countdown">00 00 00</p>
                   </div>
                   <p class="small text-info">$14,750 (USD)</p>
 
@@ -469,7 +487,7 @@
                 <hr class="my-0">
                 <div class="card-body">
                   <div class="d-flex justify-content-between align-items-center pb-2 mb-1">
-                    <a href="#!" class="text-dark fw-bold">Cancel</a>
+                    <a href="#!" class="text-white fw-bold">Cancel</a>
                     <button type="button" class="btn btn-primary align-items-center">Submit A Bid</button>
                   </div>
                 </div>
@@ -480,7 +498,7 @@
     </section>
     <!--========= GET STARTED    SECTION ENDS ======== -->
     <!--========= STARTED  SECTION THREE ======== -->
-    <section class="started_section-three d-flex flex-nowrap justify-content-around">
+    <section class="upcoming-section d-flex flex-nowrap justify-content-around">
       <div class="container">
         <div class="row">
           <div class="container">
@@ -511,14 +529,14 @@
                   </div>
                   <div class="acution-content">
                     <h5>
-                      <a href="product-details.html">
+                      <a href="product-details.html" class="fw-bold fs-1">
                         AS47 Headphone Bluetooth
                         5.0 Earphone
                       </a>
                     </h5>
                     <div class="content">
                       <div class="left">
-                        <h6>
+                        <h6 class="text-white">
                           Current Bid:
                         </h6>
                         <h6 class="text-base-2">
@@ -526,23 +544,23 @@
                         </h6>
                       </div>
                       <div class="right">
-                        <h6>
+                        <h6 class="text-warning">
                           Ends In:
                         </h6>
                         <ul class="countdown" data-date="10/29/2022 16:16:00">
                           <li>
-                            <span class="hours">00</span>
+                            <span class="hours" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="minutes">00</span>
+                            <span class="minutes" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="seconds">00</span>
+                            <span class="seconds" id="countdown">00</span>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="cm-button">
+                    <div class="product-button">
                       <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
@@ -563,14 +581,14 @@
                   </div>
                   <div class="acution-content">
                     <h5>
-                      <a href="product-details.html">
+                      <a href="product-details.html" class="fw-bold fs-1">
                         Android Mobile Phone 4Gb /
                         128Gb 6000Mah Battery
                       </a>
                     </h5>
                     <div class="content">
                       <div class="left">
-                        <h6>
+                        <h6 class="text-white">
                           Current Bid:
                         </h6>
                         <h6 class="text-base-2">
@@ -578,23 +596,23 @@
                         </h6>
                       </div>
                       <div class="right">
-                        <h6>
+                        <h6 class="text-warning">
                           Ends In:
                         </h6>
                         <ul class="countdown" data-date="10/29/2022 16:16:00">
                           <li>
-                            <span class="hours">00</span>
+                            <span class="hours" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="minutes">00</span>
+                            <span class="minutes" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="seconds">00</span>
+                            <span class="seconds" id="countdown">00</span>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="cm-button">
+                    <div class="product-button">
                       <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
@@ -614,14 +632,14 @@
                   </div>
                   <div class="acution-content">
                     <h5>
-                      <a href="product-details.html">
+                      <a href="product-details.html" class="fw-bold fs-1">
                         Apple Mac mini Late 2022
 
                       </a>
                     </h5>
                     <div class="content">
                       <div class="left">
-                        <h6>
+                        <h6 class="text-white fw-bold fs-1">
                           Current Bid:
                         </h6>
                         <h6 class="text-base-2">
@@ -629,23 +647,23 @@
                         </h6>
                       </div>
                       <div class="right">
-                        <h6>
+                        <h6 class="text-warning">
                           Ends In:
                         </h6>
                         <ul class="countdown" data-date="10/29/2022 16:16:00">
                           <li>
-                            <span class="hours">00</span>
+                            <span class="hours" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="minutes">00</span>
+                            <span class="minutes" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="seconds">00</span>
+                            <span class="seconds" id="countdown">00</span>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="cm-button">
+                    <div class="product-button">
                       <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
@@ -665,14 +683,14 @@
                   </div>
                   <div class="acution-content">
                     <h5>
-                      <a href="product-details.html">
+                      <a href="product-details.html" class="fw-bold fs-1">
                         Apple Mac mini Late 2022
 
                       </a>
                     </h5>
                     <div class="content">
                       <div class="left">
-                        <h6>
+                        <h6 class="text-white">
                           Current Bid:
                         </h6>
                         <h6 class="text-base-2">
@@ -680,23 +698,23 @@
                         </h6>
                       </div>
                       <div class="right">
-                        <h6>
+                        <h6 class="text-warning">
                           Ends In:
                         </h6>
                         <ul class="countdown" data-date="10/29/2022 16:16:00">
                           <li>
-                            <span class="hours">00</span>
+                            <span class="hours" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="minutes">00</span>
+                            <span class="minutes" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="seconds">00</span>
+                            <span class="seconds" id="countdown">00</span>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="cm-button">
+                    <div class="product-button">
                       <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
@@ -716,14 +734,14 @@
                   </div>
                   <div class="acution-content">
                     <h5>
-                      <a href="product-details.html">
+                      <a href="product-details.html" class="fw-bold fs-1">
                         Apple Mac mini Late 2022
 
                       </a>
                     </h5>
                     <div class="content">
                       <div class="left">
-                        <h6>
+                        <h6 class="text-white">
                           Current Bid:
                         </h6>
                         <h6 class="text-base-2">
@@ -731,23 +749,23 @@
                         </h6>
                       </div>
                       <div class="right">
-                        <h6>
+                        <h6 class="text-warning">
                           Ends In:
                         </h6>
                         <ul class="countdown" data-date="10/29/2022 16:16:00">
                           <li>
-                            <span class="hours">00</span>
+                            <span class="hours" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="minutes">00</span>
+                            <span class="minutes" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="seconds">00</span>
+                            <span class="seconds" id="countdown">00</span>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="cm-button">
+                    <div class="product-button">
                       <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
@@ -767,14 +785,14 @@
                   </div>
                   <div class="acution-content">
                     <h5>
-                      <a href="product-details.html">
+                      <a href="product-details.html" class=" fw-bold fs-1">
                         Apple Mac mini Late 2022
 
                       </a>
                     </h5>
                     <div class="content">
                       <div class="left">
-                        <h6>
+                        <h6 class="text-white">
                           Current Bid:
                         </h6>
                         <h6 class="text-base-2">
@@ -782,23 +800,23 @@
                         </h6>
                       </div>
                       <div class="right">
-                        <h6>
+                        <h6 class="text-warning">
                           Ends In:
                         </h6>
                         <ul class="countdown" data-date="10/29/2022 16:16:00">
                           <li>
-                            <span class="hours">00</span>
+                            <span class="hours" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="minutes">00</span>
+                            <span class="minutes" id="countdown">00</span>
                           </li>
                           <li>
-                            <span class="seconds">00</span>
+                            <span class="seconds" id="countdown">00</span>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="cm-button">
+                    <div class="product-button">
                       <a href="product-details.html" class="bid-btn">
                         Submit a bid
                       </a>
@@ -822,7 +840,7 @@
     <!--=========  STARTED  SECTION THREE ENDS ======== -->
 
     <!--=========  STARTED SECTION REGISTER ======== -->
-    <section class="started_section-register d-flex flex-nowrap justify-content-around">
+    <section class="section-register d-flex flex-nowrap justify-content-around">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 col-md-8">
@@ -837,7 +855,7 @@
                 community. Don't miss out on the exciting opportunity to find great deals and turn your unused items
                 into profits.
                 Register now and start bidding!</p>
-              <a href="#0" class="bid-btn cd-popup-trigger">
+              <a href="#0" class="free-register-btn cd-popup-trigger">
                 Register
               </a>
             </div>
@@ -852,7 +870,7 @@
     </section>
     <!--=========  STARTED    SECTION REGISTER ENDS ======== -->
     <!--=========  STARTED    SECTION SUCCESS  ======== -->
-    <section class="started_section-success d-flex flex-nowrap justify-content-around">
+    <section class="celebrate-section  d-flex flex-nowrap justify-content-around">
       <div class="container">
         <div class="row">
           <div class="py-5">
@@ -876,7 +894,7 @@
             <div class="team-items">
               <div class="thumb-box">
                 <div class="thumb">
-                  <img src="assets/img/Winners6.jpg" alt="team-img" class="winner-img">
+                  <img src="assets/img/Winners62.jpg" alt="team-img" class="winner-img">
                 </div>
                 <h5 class="text-white">
                   Oscar
@@ -1675,7 +1693,7 @@
             </h4>
             <form action="#" class="newsletter-form">
               <input type="email" placeholder="Enter Your Email" class="form-input">
-              <button type="submit" class="bid-btn">Subscribe</button>
+              <button type="submit" class="new-home-btn">Subscribe</button>
             </form>
           </div>
         </div>
@@ -1688,9 +1706,7 @@
   <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
   <div id="footer"></div>
   <!--=========  FOOTER SECTION  ENDS ======== -->
-  <script src="/layout/commons.js" defer></script>
-  <script src="/src/js/logout.js" defer></script>
-  <script src="/src/js/serch.js" defer></script>
+
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 

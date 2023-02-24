@@ -5,12 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="View your total credit balance on BidBay and keep track of your transactions. Bid on your favorite items and use your credit to pay for them.">
+
   <link rel="stylesheet" href="/dist/css/viewCredit.css">
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>View Credit </title>
+
   <script src="../js/authDecision.js" defer></script>
+
+  <title>View Total Credit | BidBay </title>
 </head>
 
 <body class="bg-primary">
@@ -56,21 +62,11 @@
                 </a>
               </li>
             </ul>
-            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link"
-              >Login</a
-            >
-            <a
-              href="register.html"
-              id="registerLink"
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
               class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
-              <i class="fas fa-circle-user"></i> Register</a
-            >
-            <a
-              class="btn-cta logout-btn mypopup"
-              id="logout-link"
-              onclick="onLogout()"
-              >Logout</a
-            >
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
           </div>
         </div>
       </div>
@@ -85,7 +81,7 @@
     <!--=== USER MAY VIEW TOTAL CREDIT ===== -->
     <section class="view-credit">
       <div class="container mt-5">
-        <h1 class="text-center">My Credits</h1>
+        <h1 class="text-center fw-bold fs-1">Your Total Credit</h1>
         <div class="row">
           <div class="col-md-6 offset-md-3">
             <div class="card">
@@ -128,7 +124,7 @@
   <!--=========  FOOTER SECTION  ENDS ======== -->
 
   <script src="/src/scss/routes/js/bidHistory.js" defer type="module"></script>
-<script src="/src/scss/routes/js/api/auth/logoutUser.js" defer></script>
+  <script src="/src/scss/routes/js/api/auth/logoutUser.js" defer></script>
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="../js/logout.js" defer></script>

@@ -5,11 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/bidsTable.css">
+
+  <meta name="description"
+    content="View the current bids on items up for auction on BidBay. Find great deals and place your own bids to win! Stay up-to-date with the latest bidding activity on BidBay.">
+
+  <link rel="stylesheet" href="/dist/css/ViewBids.css">
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>Bids Table</title>
+  <title>View Bids Page | BidBay</title>
   <script src="../js/authDecision.js" defer></script>
 
 
@@ -71,34 +75,45 @@
   </div>
 
   <main>
-    <!--========= Create Listing  SECTION   ======== -->
-    <section class="order-history">
-      <h2>Order History</h2>
-      <div class="table-container">
-        <table id="orderTable">
+    <!----- View Bids  SECTION  ----->
+    <section class="View-bids">
+      <div class="container">
+        <h1 class="text-center text-white fw-bold">View Bids Page:</h1>
+        <table>
           <thead>
             <tr>
-              <th>Order Number</th>
-              <th>Product Name</th>
-              <th>Quantity</th>
-              <th>Total Price</th>
+              <th class="text-white fw-bolder fs-3">Bidder Name</th>
+              <th class="text-white fw-bolder fs-3">Bid Amount</th>
+              <th class="text-white fw-bolder fs-3">Bid Date</th>
             </tr>
           </thead>
           <tbody>
-            <!-- Order history will be added here dynamically using JavaScript -->
+            <tr>
+              <td class="text-white fw-bold fs-2">John</td>
+              <td class="text-white fs-3">$100</td>
+              <td class="text-white fs-3">2021-08-01</td>
+            </tr>
+            <tr>
+              <td class="text-white fw-bold fs-2">Sara</td>
+              <td class="text-white fs-3">$150</td>
+              <td class="text-white fs-3">2021-08-03</td>
+            </tr>
+            <tr>
+              <td class="text-white fw-bold fs-2">Mike</td>
+              <td class="text-white fs-3">$200</td>
+              <td class="text-white fs-3">2021-08-04</td>
+            </tr>
           </tbody>
         </table>
       </div>
+      </div> -->
     </section>
-
-
-
-    <!--=========  NEWS LETTER SECTION  ======== -->
+    <!----- NEWS LETTER SECTION ------>
     <section class="newsletter-section">
       <div class="container">
         <div class="newsletter-wrapper">
           <div class="icon-div">
-            <img src="" alt="mailbox-img">
+            <img src="/assets/img/icons867.png" alt="mailbox-img">
           </div>
           <div class="content">
             <h4 class="text-white p-3">
@@ -106,7 +121,7 @@
             </h4>
             <form action="#" class="newsletter-form">
               <input type="email" placeholder="Enter Your Email" class="form-input">
-              <button type="submit" class="cmn--btn">Subscribe</button>
+              <button type="submit" class="new-home-btn">Subscribe</button>
             </form>
           </div>
         </div>
@@ -119,9 +134,10 @@
   <div id="footer"></div>
   <!--=========  FOOTER SECTION  ENDS ======== -->
 
-  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/logout.js" defer></script>
-  <script src="/src/views/common.js" defer> </script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="../js/logout.js"></script>
+  <script defer src="../views/common.js"></script>
+  <script defer src="../js/my-script.js"></script>
 </body>
 
 </html>

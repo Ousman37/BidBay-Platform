@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="View the listing on BidBay to find the best deals on items from around the world. Bid, buy, and sell with ease on BidBay.">
 
-  <link rel="stylesheet" href="/dist/css/create-listing.css">
+  <meta name="description"
+    content="View and manage your bids on BidBay, the premier online auction platform. Stay up to date on the status of your bids and never miss out on the items you want. Sign up now to start bidding!">
+
+  <link rel="stylesheet" href="/dist/css/add-bid-page.css">
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>View Listing | BidBay</title>
+  <title>View Bids Page | BidBay</title>
   <script src="../js/authDecision.js" defer></script>
+
 
 </head>
 
@@ -73,26 +75,46 @@
   </div>
 
   <main>
-    <!--========= Create Listing  SECTION   ======== -->
-    <Section class="Create-listing">
-      <div class="container mt-5">
-        <div class="container">
-          <h2>Listing Title</h2>
-          <p>Listing Description</p>
-          <p>Price: $100</p>
-          <img src="/assets/img/ jewelry5.jpg" alt="Listing Image" />
-          <button class="btn btn-primary">Bid on Listing</button>
-        </div>
-      </div>
-    </Section>
+    <!----- View Bids  SECTION  ----->
 
-    <!--=========  STARTED    SECTION  TEAM ENDS   ======== -->
-    <!--=========  NEWS LETTER SECTION  ======== -->
+    <section class="add-bid-container">
+      <div class="container">
+        <div class="add-bid-page">
+          <h1 class="text-dark text-center fw-bold">Add Bid Page</h1>
+          <div class="card">
+            <img class="card-img-bid" src="/assets/img/luxury_watch.jpg" alt="Listing Image" />
+            <div class="card-body">
+              <h5 class="card-title">Luxury Watch - The Ultimate Expression of Refined Taste</h5>
+              <p class="card-text">Luxury Watch is the epitome of elegance and sophistication. Meticulously crafted with
+                the finest materials and attention
+                to detail, this timepiece is a true work of art. Its precise movement ensures accurate timekeeping,
+                while its stunning
+                design makes a statement. Available in a variety of styles and colors, Luxury Watch is the perfect
+                accessory to elevate
+                your style and express your refined taste.</p>
+              <p class="card-text text-dark">Current Bid: $100</p>
+
+              <form>
+                <label for="bid-amount" class="text-dark">Bid Amount:</label>
+                <input type="number" id="bid-amount" name="bid-amount">
+                <label for="additional-message" class="text-dark">Additional Message:</label>
+                <textarea id="additional-message" name="additional-message"></textarea>
+                <button type="submit" id="button-add-bid">Submit Bid</button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!----- NEWS LETTER SECTION ------>
     <section class="newsletter-section">
       <div class="container">
         <div class="newsletter-wrapper">
           <div class="icon-div">
-            <img src="" alt="mailbox-img">
+            <img src="/assets/img/icons867.png" alt="mailbox-img">
           </div>
           <div class="content">
             <h4 class="text-white p-3">
@@ -100,23 +122,23 @@
             </h4>
             <form action="#" class="newsletter-form">
               <input type="email" placeholder="Enter Your Email" class="form-input">
-              <button type="submit" class="cmn--btn">Subscribe</button>
+              <button type="submit" class="new-home-btn">Subscribe</button>
             </form>
           </div>
         </div>
       </div>
     </section>
-    <!--=========  NEWS LETTER SECTION ENDS  ======== -->
-  </main>
 
+  </main>
   <!--=========  FOOTER SECTION  ======== -->
-  <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
+
   <div id="footer"></div>
   <!--=========  FOOTER SECTION  ENDS ======== -->
 
-  <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/src/views/common.js" defer> </script>
-
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="../js/logout.js"></script>
+  <script defer src="../views/common.js"></script>
+  <script defer src="../js/my-script.js"></script>
 </body>
 
 </html>

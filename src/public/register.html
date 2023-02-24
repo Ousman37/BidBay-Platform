@@ -5,24 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Register as a user on BidBay and start bidding on your favorite items. Join our community of passionate bidders today.">
   <link rel="stylesheet" href="/dist/css/register.css">
 
 
   <script defer src="../utils/validator.js"></script>
 
-  <!-- <script defer type="module" src="/src-1/js/main.js"></script>
-  <script defer type="module" src="/src-1/js/controllers/authController.js"></script>
-  <script defer type="module" src="/src-1/js/views/authView.js"></script>
-  <script defer src="/src-1/utils/validator.js"></script>
-  <script defer src="/src-1/routes/userRoutes.js"></script>
-  <script defer src="/src-1/js/api.js"></script>
 
- -->
 
   <!--font awesome link-->
   <script src=" https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
 
-  <title>Register</title>
+  <title>User Registration | BidBay </title>
   <script src="../js/authDecision.js" defer></script>
 
 </head>
@@ -38,7 +34,7 @@
               <div class="icon text-white">
                 <i class="fas fa-message"></i>
               </div>
-              <a href="#0"> info@Bid-It.com </a>
+              <a href="#0"> info@Bidbay.com </a>
             </li>
             <li>
               <div class="icon text-white">
@@ -70,21 +66,11 @@
                 </a>
               </li>
             </ul>
-            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link"
-              >Login</a
-            >
-            <a
-              href="register.html"
-              id="registerLink"
+            <a href="login.html" class="btn-cta login-btn mypopup" id="login-link">Login</a>
+            <a href="register.html" id="registerLink"
               class="btn-cta cmn--btn cd-popup-trigger register-btn register-link">
-              <i class="fas fa-circle-user"></i> Register</a
-            >
-            <a
-              class="btn-cta logout-btn mypopup"
-              id="logout-link"
-              onclick="onLogout()"
-              >Logout</a
-            >
+              <i class="fas fa-circle-user"></i> Register</a>
+            <a class="btn-cta logout-btn mypopup" id="logout-link" onclick="onLogout()">Logout</a>
           </div>
         </div>
       </div>
@@ -96,8 +82,8 @@
   <main>
     <!--========= Registration  SECTION   ======== -->
     <Section class="registration_section">
-      <div class="container mt-5">
-        <h1 class="text-center mb-5">Registration</h1>
+      <div class="container mt-10">
+        <h1 class="text-center mb-5 text-white">Welcome to BidBay! Register now to access all features</h1>
         <div class="row">
           <div class="col-md-6 mx-auto">
             <form id="registrationForm">
@@ -107,12 +93,19 @@
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <input type="email"  pattern="^[A-Za-z0-9._+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}" id="email" name="email" 
+                  class="form-control" title="Must be a valid email address" placeholder="name@example.com" required />
+                
               </div>
               <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" name="password" required>
+               
+                <input type="password"  id="password" name="password" pattern="[a-zA-Z0-9]{8,}" class="form-control" placeholder="password" required />
+                
               </div>
+
+
+
               <div class="form-group">
                 <label for="avatar">Avatar (optional)</label>
                 <input type="text" class="form-control" id="avatar" name="avatar">
@@ -136,15 +129,15 @@
       <div class="container">
         <div class="newsletter-wrapper">
           <div class="icon-div">
-            <img src="" alt="mailbox-img">
+            <img src="/assets/img/icons867.png" alt="mailbox-img">
           </div>
           <div class="content">
-            <h4 class="text-white p-3">
+            <h2 class="text-white p-3">
               Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
-            </h4>
+            </h2>
             <form action="#" class="newsletter-form">
               <input type="email" placeholder="Enter Your Email" class="form-input">
-              <button type="submit" class="cmn--btn">Subscribe</button>
+              <button type="submit" class="news-btn">Subscribe</button>
             </form>
           </div>
         </div>
@@ -152,7 +145,7 @@
     </section>
     <!--=========  NEWS LETTER SECTION ENDS  ======== -->
   </main>
-  
+
   <!--=========  FOOTER SECTION  ======== -->
   <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
   <div id="footer"></div>

@@ -5,11 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Content and images from BidBay's media gallery showcasing the latest auctions, products, and events.">
+
   <link rel="stylesheet" href="/dist/css/media-gallery.css">
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
-  <title>View Listing</title>
+  <title>Media gallery | BidBay </title>
   <script src="../js/authDecision.js" defer></script>
 
 
@@ -80,13 +83,13 @@
           <div class="col-md-6 mx-auto">
             <form>
               <label for="title" class="fw-bold fs-3">Title:</label><br>
-              <input type="text" id="title" name="title"><br>
+              <input type="text" id="title" name="title" required><br>
 
               <label for="deadline" class="fw-bold fs-3">Deadline:</label><br>
-              <input type="date" id="deadline" name="deadline"><br>
+              <input type="date" id="deadline" name="deadline" required><br>
 
               <label for="media" class="fw-bold fs-3">Media Gallery:</label><br>
-              <input type="file" id="media" name="media" multiple><br>
+              <input type="file" id="media" name="media" multiple required><br>
 
               <label for="description" class="fw-bold fs-3">Description:</label><br>
               <textarea id="description" name="description"></textarea><br>
@@ -94,7 +97,7 @@
 
               <p id="success-message" class="text-success"></p>
               <div id="error-message" class="text-danger"></div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn-cta media-button">Submit</button>
             </form>
           </div>
 
