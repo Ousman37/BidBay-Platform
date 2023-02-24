@@ -8,7 +8,8 @@
     text-align: center;
     h1 {
       font-size: 2rem;
-      margin-bottom: 5rem;
+      margin-bottom: 8rem;
+      margin-top: 14rem !important;
     }
   }
   .row {
@@ -48,5 +49,22 @@
         }
       }
     }
+  }
+}
+.media-button {
+  background-color: #1e7e34;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #007bff;
+    margin-right: 10px;
+    color: #fff;
   }
 }

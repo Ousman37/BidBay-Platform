@@ -1,0 +1,50 @@
+.View-bids {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    thead {
+      background: none;
+    }
+
+    tbody {
+      tr:nth-child(even) {
+       background: none;
+      }
+    }
+  }
+}
+
+
+.new-home-btn {
+     background-color: #00c48c;
+  color: #fff;
+  padding: 15px 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1px;
+}
+
+.bidding-thumb {
+  text-align: right;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
