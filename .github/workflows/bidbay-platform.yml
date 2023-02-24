@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - development
+  pull_request:
+    branches:
+      - development
 
 jobs:
   build:
@@ -11,7 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        ref: development
 
     - name: Setup Node.js environment
       uses: actions/setup-node@v2
@@ -21,10 +27,7 @@ jobs:
     - name: Setup Go environment
       uses: actions/setup-go@v3.5.0
       with:
-        go-version: 1.17
-
-    - name: Change directory
-      run: cd BidBay-Platform
+        go-version: 1.17.x
 
     - name: Install dependencies
       run: npm install
