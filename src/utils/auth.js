@@ -25,6 +25,7 @@ function login() {
 
         const credits = data.credits;
         // Redirect to the another page..
+        console.log("Location is Going to be Redirect");
         window.location.href = `view-credit.html?credits=${credits}`;
 
         // Hide the loading div
