@@ -11,21 +11,22 @@
   &.login-btn {
     background-color: green;
   }
-
-  &.logout-btn {
-    background-color: red;
-  }
 }
+#logout-link {
+  background-color: red;
 
-.logout-btn {
-  display: inline-block;
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
+  &#logout-link {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
 
-  &:hover {
-    cursor: pointer;
+    &:hover {
+      background-color: brown;
+      color: white;
+      cursor: pointer;
+    }
   }
 }
 

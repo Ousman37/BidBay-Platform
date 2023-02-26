@@ -17,10 +17,16 @@
       transform: scale(1.1);
     }
 
+    .card-img-bid {
+      max-width: 100%;
+      height: auto;
+    }
+
     h2 {
       margin-bottom: 2rem;
       font-size: 2rem;
       text-align: center;
+      font-weight: 700;
     }
 
     .card {
@@ -84,6 +90,15 @@
       }
     }
   }
+}
+
+.success-message {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid green;
+  background-color: lightgreen;
+  color: darkgreen;
+  font-weight: bold;
 }
 
 .bid-listing {
