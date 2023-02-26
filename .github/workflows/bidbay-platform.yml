@@ -1,39 +1,28 @@
-name: CI
+name: Deploy to Netlify
 
 on:
   push:
     branches:
-      - development
-  pull_request:
-    branches:
-      - development
+      - main
 
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        ref: development
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v2
-      with:
-        node-version: '16.x'
+      - name: Install dependencies
+        run: npm install
 
-    - name: Setup Go environment
-      uses: actions/setup-go@v3.5.0
-      with:
-        go-version: 1.17.x
+      - name: Build the app
+        run: npm run build
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build
-      run: npm run build
-
-    - name: Test
-      run: npm test
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@master
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: <your_site_id_here>
+        with:
+          args: deploy --prod
