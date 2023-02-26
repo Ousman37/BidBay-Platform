@@ -6,21 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Add your favorite items to your BidBay cart and checkout securely. Easily manage your bids and complete your purchases on our platform.">
+    content="Create a new listing on our website and share your product or service with our community. Our user-friendly platform makes it easy to upload photos, write a detailed description, and set your own price. Start selling today!">
 
-  <link rel="stylesheet" href="/dist/css/addToCart.css">
-
+  <link rel="stylesheet" href="/dist/css/create-listing.css">
 
   <!--font awesome link-->
-  <script src=" https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
+  <title>Create Listing | BidBay </title>
 
 
-  <title>Add to Cart | BidBay </title>
+
 </head>
 
 <body class="bg-primary">
   <div class="fixed-top bg-primary">
-
     <!-- --------------------- COMMONS HEADER --------------------- -->
     <header class="top-heder">
       <div class="container-fluid">
@@ -72,61 +71,43 @@
       </div>
     </header>
     <div id="header"></div>
-
   </div>
-  <!--========= NVA BAR SECTION ENDS  ======== -->
-  <main>
-    <!--========= Product card here   ======== -->
-    <section id="product-card py-6">
-      <div class="container py-5">
-        <h1 class="text-center mb-4 text-white fw-bold mt-md-5">Your Cart</h1>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="card mb-3">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-2">
-                    <img src="/assets/img/pexels-car1.jpg" alt="" class="img-fluid rounded" alt="Product Image">
 
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="card-title">Product Title</h5>
-                    <p class="card-text">Product Description</p>
-                  </div>
-                  <div class="col-md-2">
-                    <p class="card-text">$19.99</p>
-                  </div>
-                  <div class="col-md-2">
-                    <div class="form-floating">
-                      <input type="number" class="form-control" id="quantity" value="1">
-                      <label for="quantity">Quantity</label>
-                    </div>
-                  </div>
-                  <div class="col-md-2">
-                    <button type="button" class="btn btn-danger">Remove</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Add more product cards here -->
+  <main>
+    <!--========= Create Listing  SECTION   ======== -->
+
+    <Section class="media-gallery">
+      <div class="container mt-5">
+        <h1 class="text-center mb-5 text-white fw-bold fs-1">Create Listing</h1>
+        <div class="row">
+          <div class="col-md-6 mx-auto">
+            <form>
+              <label for="title" class="fw-bold fs-3">Title:</label><br>
+              <input type="text" id="title" name="title" required><br>
+
+              <label for="deadline" class="fw-bold fs-3">Deadline:</label><br>
+              <input type="date" id="deadline" name="deadline" required><br>
+
+              <label for="media" class="fw-bold fs-3">Media Gallery:</label><br>
+              <input type="text" id="media" name="media" multiple required><br>
+
+              <label for="description" class="fw-bold fs-3">Description:</label><br>
+              <textarea id="description" name="description"></textarea><br>
+
+
+              <p id="success-message" class="text-success"></p>
+              <div id="error-message" class="text-danger"></div>
+              <button type="submit" class="cta media-button">Submit</button>
+            </form>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Order Summary</h5>
-                <hr>
-                <p class="card-text">Subtotal: $19.99</p>
-                <p class="card-text">Tax: $2.00</p>
-                <p class="card-text">Shipping: $5.00</p>
-                <hr>
-                <h5 class="card-title">Total: $26.99</h5>
-                <button type="button" class="btn btn-success mt-3">Checkout</button>
-              </div>
-            </div>
-          </div>
+
+          <div id="product-list"></div>
         </div>
       </div>
-    </section>
+
+    </Section>
+
+
 
 
     <!--=========  NEWS LETTER SECTION  ======== -->
@@ -148,29 +129,19 @@
         </div>
       </div>
     </section>
-    <!--=========  NEWS LETTER SECTION ENDS  ======== -->
+
   </main>
+  <!--=========  FOOTER SECTION  ======== -->
 
-
-  <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
   <div id="footer"></div>
-
-
-  <!-- Custom JS -->
-
-  <!-- <script src="/src/js/auctions.js"></script>
-  <script src="/src/js/popups.js"></script> -->
-  <!-- Create anonymous account -->
-
-
-
-  <script src="../js/authDecision.js" defer></script>
-
-  <script defer src="../views/shopping-cart.js"></script>
+  <!--=========  FOOTER SECTION  ENDS ======== -->
 
   <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../js/authDecision.js" defer></script>
+  <script src="../js/logout.js" defer></script>
   <script src="/src/views/common.js" defer> </script>
-  <script src="/src/js/product.js"></script>
+  <script src="/src/js/create_listing.js" defer></script>
 </body>
 
 </html>

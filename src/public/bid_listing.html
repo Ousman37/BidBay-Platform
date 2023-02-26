@@ -2,17 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/css/bidListing.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/dist/css/bidListing.css" />
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
   <title>Bid on Listing | BidBay</title>
-  <script src="../js/authDecision.js" defer></script>
-
-
 </head>
 
 <body class="bg-primary">
@@ -77,59 +74,56 @@
         <h2 class="text-white fw-bold">Bid on Listing</h2>
         <div class="container">
           <div class="card">
-            <img class="card-img-bid" src="/assets/img/luxury_watch.jpg" alt="Listing Image" />
+            <img id="productImg" class="card-img-bid" src="/assets/img/luxury_watch.jpg" alt="Listing Image" />
             <div class="card-body">
-              <h5 class="card-title">Luxury Watch - The Ultimate Expression of Refined Taste</h5>
-              <p class="card-text">Luxury Watch is the epitome of elegance and sophistication. Meticulously crafted with
-                the finest materials and attention
-                to detail, this timepiece is a true work of art. Its precise movement ensures accurate timekeeping,
-                while its stunning
-                design makes a statement. Available in a variety of styles and colors, Luxury Watch is the perfect
-                accessory to elevate
-                your style and express your refined taste.</p>
-              <p class="card-text">Current Bid: $100</p>
+              <h5 class="card-title">
+                Luxury Watch - The Ultimate Expression of Refined Taste
+              </h5>
+              <p class="card-text">
+                Luxury Watch is the epitome of elegance and sophistication.
+                Meticulously crafted with the finest materials and attention
+                to detail, this timepiece is a true work of art. Its precise
+                movement ensures accurate timekeeping, while its stunning
+                design makes a statement. Available in a variety of styles and
+                colors, Luxury Watch is the perfect accessory to elevate your
+                style and express your refined taste.
+              </p>
+              <p class="card-text">Current Bid: <span id="bids">100</span></p>
               <form class="form-group">
                 <label for="amount">Enter Bid Amount:</label>
                 <input type="number" class="form-control" id="amount" />
-                <button type="button" class="btn btn-bid btn-primary" onclick="bitSubmit()">Submit Bid</button>
+                <button type="button" class="btn btn-bid btn-primary" onclick="bitSubmit()">
+                  Submit Bid
+                </button>
               </form>
 
-              <script>
-                function bitSubmit() {
-                  const user = localStorage.getItem('authLogin');
-                  if (!user) {
-                    window.location.href = '/src/public/login.html';
-                  }
-                }
-              </script>
+              
             </div>
           </div>
-          
         </div>
       </div>
     </section>
-
 
     <!--=========  NEWS LETTER SECTION  ======== -->
     <section class="newsletter-section">
       <div class="container">
         <div class="newsletter-wrapper">
           <div class="icon-div">
-            <img src="" alt="mailbox-img">
+            <img src="" alt="mailbox-img" />
           </div>
           <div class="content">
             <h4 class="text-white p-3">
-              Get to Know the Visionaries Behind Bid-It: Meet Our Management Team
+              Get to Know the Visionaries Behind Bid-It: Meet Our Management
+              Team
             </h4>
             <form action="#" class="newsletter-form">
-              <input type="email" placeholder="Enter Your Email" class="form-input">
+              <input type="email" placeholder="Enter Your Email" class="form-input" />
               <button type="submit" class="cmn--btn">Subscribe</button>
             </form>
           </div>
         </div>
       </div>
     </section>
-
   </main>
   <!--=========  FOOTER SECTION  ======== -->
 
@@ -137,8 +131,12 @@
   <!--=========  FOOTER SECTION  ENDS ======== -->
 
   <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/logout.js" defer></script>
-  <script src="/src/views/common.js" defer> </script>
+
+  <script defer src="../views/bid-listing.js"></script>
+  <script defer src="../js/logout.js"></script>
+  <script defer src="/src/views/common.js"></script>
+
+  <script defer src="../js/authDecision.js"></script>
 </body>
 
 </html>
