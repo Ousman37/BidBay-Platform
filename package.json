@@ -1,5 +1,5 @@
 {
-  "name": "bidbay-platform",
+  "name": "npm",
   "version": "1.0.0",
   "description": "A web platform for creating and bidding on listings",
   "main": "index.js",
