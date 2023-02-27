@@ -2,7 +2,7 @@
   "name": "bidbay-platform",
   "version": "1.0.0",
   "description": "A web platform for creating and bidding on listings",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
     "build": "sass src/scss:dist/css",
