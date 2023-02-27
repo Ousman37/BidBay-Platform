@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - development
 
 jobs:
   build-and-deploy:
@@ -13,7 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: main
+          ref: ${{ github.event.ref }}
 
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
