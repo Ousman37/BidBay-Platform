@@ -4,7 +4,10 @@ function onLogout() {
   if (auth) {
     // Remove the LocalStorage..
     localStorage.removeItem('authLogin');
-    alert('Logged Out');
+   
+
+    localStorage.removeItem('authCheck');
+  
 
     // Redirect to Login page..
     window.location.href = '/src/public/login.html';

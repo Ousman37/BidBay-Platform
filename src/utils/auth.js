@@ -23,9 +23,12 @@ function login() {
         localStorage.setItem('authLogin', data.accessToken);
         console.log(data);
 
+        localStorage.setItem('authCheck', 'YES');
+        console.log(data);
+
         const credits = data.credits;
         // Redirect to the another page..
-        console.log("Location is Going to be Redirect");
+        console.log('Location is Going to be Redirect');
         window.location.href = `view-credit.html?credits=${credits}`;
 
         // Hide the loading div
