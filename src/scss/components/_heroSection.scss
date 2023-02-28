@@ -1,3 +1,8 @@
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -96,6 +101,13 @@
           .row {
             flex-direction: column;
             align-items: center;
+          }
+          .hero-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 117vh;
           }
 
           .col-md-6 {
@@ -229,6 +241,7 @@
       }
 
       // Small mobile devices
+
       @media (max-width: 576px) {
         .col-sm-6,
         .col-lg-4,
@@ -254,41 +267,54 @@
     }
   }
 }
+@media (max-width: 412px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+  }
 
-// // /* For screen sizes larger than 1124px */
-// .hero-section {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh;
+  .col-md-6 {
+    margin-top: 40px;
 
-//   .container-fluid {
-//     max-width: 1200px;
+    .heading {
+      margin-bottom: 30px;
 
-//     .row {
-//       align-items: center;
+      h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+      }
 
-//       .col-md-6 {
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
+      p {
+        font-size: 22px;
+        margin-bottom: 30px;
+      }
 
-//         .heading {
-//           text-align: left;
-//         }
+      .text-light {
+        font-size: 20px;
+      }
+    }
 
-//         p.text-md-start {
-//           text-align: left;
-//         }
-//       }
+    .btn-container {
+      flex-direction: column;
+      gap: 10px;
 
-//       .image-figure {
-//         margin-left: auto;
-//         margin-right: 0;
-//         max-width: 100%;
-//         height: auto;
-//       }
-//     }
-//   }
-// }
+      .btn {
+        font-size: 20px;
+        padding: 14px 24px;
+      }
+    }
+  }
+
+  .image-figure {
+    margin-bottom: 40px;
+  }
+}
+

@@ -1,13 +1,8 @@
-
-
-
-
 // //Dashboard section
 
 .dashboard-wrapper {
   transform: translateY(-120px);
   margin-bottom: -120px;
-  
 }
 .dashboard-widget {
   position: sticky;
@@ -16,8 +11,8 @@
 .dashboard-widget {
   .user-box {
     border-radius: 10px;
-    border: 1px solid #1A61CC;
-    background-color: #402ECD;
+    border: 1px solid #1a61cc;
+    background-color: #402ecd;
     padding: 25px 25px;
     margin-bottom: 20px;
     .thumb {
@@ -47,17 +42,17 @@
   }
   .dashboard-menu {
     border-radius: 10px;
-   border: 1px solid #1A61CC;
-    background-color: #402ECD;
+    border: 1px solid #1a61cc;
+    background-color: #402ecd;
     padding: 25px 25px;
     margin-bottom: 5rem;
     li {
       a {
-        border: 1px solid #1A61CC;
+        border: 1px solid #1a61cc;
         border-radius: 10px;
         padding: 14px 18px;
         transition: all 0.3s;
-       
+
         span {
           font-size: 18px;
           font-weight: 500;
@@ -82,8 +77,8 @@
 //right
 .counter-box {
   border-radius: 10px;
-  border: 1px solid #1A61CC;
-  background-color: #402ECD;
+  border: 1px solid #1a61cc;
+  background-color: #402ecd;
   padding: 25px 25px;
   margin-bottom: 20px;
   .title {
@@ -92,7 +87,7 @@
     margin-bottom: 30px;
   }
   .activity-items {
-    border: 1px solid #1A61CC;
+    border: 1px solid #1a61cc;
     border-radius: 10px;
     padding: 25px 15px;
 
@@ -108,8 +103,8 @@
 .activity-table {
   margin-bottom: 5rem;
   border-radius: 10px;
- border: 1px solid #1A61CC;
-    background-color: #402ECD;
+  border: 1px solid #1a61cc;
+  background-color: #402ecd;
   padding: 25px 25px;
   overflow-x: auto;
   width: 100%;
@@ -121,7 +116,7 @@
       .border-none {
         border: none;
         th {
-         background: $primary;
+          background: $primary;
           border-color: unset;
           padding: 15px 15px;
           text-align: center;
@@ -147,19 +142,19 @@
             background: $primary;
             border-radius: 50%;
           }
-           border: 1px solid #1A61CC;
-          border-top: 1px solid #1A61CC;
+          border: 1px solid #1a61cc;
+          border-top: 1px solid #1a61cc;
           // border-bottom-left-radius: 20px;
           // border-top-left-radius: 20px;
           // border-bottom-right-radius: 20px;
           // border-top-right-radius: 20px;
           &:first-child {
-            border-left: 1px solid #1A61CC;
+            border-left: 1px solid #1a61cc;
             border-bottom-left-radius: 8px;
             border-top-left-radius: 8px;
           }
           &:last-child {
-            border-right:  1px solid #1A61CC;
+            border-right: 1px solid #1a61cc;
             border-bottom-right-radius: 8px;
             border-top-right-radius: 8px;
           }
@@ -173,7 +168,7 @@
 //Dashboard Profile section
 .personal-profile-inner {
   border-radius: 10px;
-  background-color: #402ECD;
+  background-color: #402ecd;
   padding: 25px 25px;
   .profile-items {
     &:not(:last-child) {
@@ -183,7 +178,7 @@
       margin-bottom: 15px;
     }
     .box-one {
-      border:  1px solid #1A61CC;
+      border: 1px solid #1a61cc;
       padding: 30px 25px;
       border-radius: 10px;
       position: relative;
@@ -193,7 +188,6 @@
         top: 20px;
       }
       li {
-      
         &:not(:last-child) {
           margin-bottom: 8px;
         }
@@ -212,8 +206,8 @@
         .form-check {
           background-color: none;
           .form-check-input {
-           background-color: #402ECD;
-            border:  1px solid #1A61CC;
+            background-color: #402ecd;
+            border: 1px solid #1a61cc;
             box-shadow: none;
           }
         }
@@ -226,18 +220,18 @@
       border: none;
       outline: none;
       background-color: transparent;
-      border:  1px solid #1A61CC;
+      border: 1px solid #1a61cc;
       border-radius: 5px;
       padding: 25px 25px;
       font-size: 18px;
-     color: #fff;
+      color: #fff;
     }
   }
 }
 .my-bids-tab {
   .tab-container {
     .my-bid-button {
-       background-color: #402ECD;
+      background-color: #402ecd;
       padding: 30px;
       border-radius: 10px;
       .tab-title {
@@ -269,14 +263,14 @@
             margin-bottom: 30px;
           }
           .form-check-input:checked {
-            background-color: #402ECD;
-            border-color: #402ECD;
+            background-color: #402ecd;
+            border-color: #402ecd;
             box-shadow: none;
             outline: none;
           }
           .form-check-input {
-            background-color: #402ECD;
-            border: 1px solid #402ECD;
+            background-color: #402ecd;
+            border: 1px solid #402ecd;
             box-shadow: none;
           }
           .content {
@@ -296,7 +290,7 @@
 }
 .winning-wrapper {
   .winning-header {
-    background: #402ECD;
+    background: #402ecd;
     padding: 30px 30px 35px;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -312,7 +306,7 @@
       .short-right {
         form {
           ::placeholder {
-           color: #fff;
+            color: #fff;
           }
         }
       }
@@ -323,10 +317,133 @@
   }
 }
 
+.dashboard {
+  & {
+    .container {
+      margin-top: 22rem;
+      .dashboard-wrapper {
+        .row {
+          justify-content: center;
 
+          .col-lg-4,
+          .col-md-6 {
+            .dashboard-widget {
+              .user-box {
+                display: flex;
+                align-items: center;
 
+                .thumb {
+                  img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                  }
+                }
 
+                .content {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  margin-left: 1rem;
 
+                  h5 {
+                    a {
+                      color: #fff;
+                    }
+                  }
+
+                  span {
+                    color: #fff;
+                  }
+
+                  a {
+                    color: #fff;
+                    border: 1px solid #fff;
+                    padding: 0.5rem 1rem;
+                    border-radius: 5px;
+                    text-align: center;
+                    margin-top: 1rem;
+                  }
+                }
+              }
+
+              .dashboard-menu {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                li {
+                  a {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1rem;
+
+                    img {
+                      width: 20px;
+                      height: 20px;
+                      margin-right: 1rem;
+                    }
+
+                    span {
+                      color: #fff;
+                    }
+                  }
+
+                  &.active {
+                    a {
+                      color: #000;
+                      font-weight: bold;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .col-lg-8 {
+            .dashboard-right-wrapper {
+              .counter-box {
+                h5 {
+                  color: #fff;
+                }
+
+                .activity-items {
+                  display: flex;
+                  align-items: center;
+
+                  .thumb {
+                    img {
+                      width: 40px;
+                      height: 40px;
+                    }
+                  }
+
+                  .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-left: 1rem;
+
+                    h3 {
+                      color: #fff;
+                      font-weight: bold;
+                    }
+
+                    h5 {
+                      color: #fff;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -375,7 +492,6 @@
           }
           span {
             font-size: 14px;
-            
           }
           &:not(:last-child) {
             border-bottom: 1px solid var(--border);
@@ -396,131 +512,4 @@
       }
     }
   }
-}
-
-.dashboard {
-& {
-.container {
-margin-top: 22rem;  .dashboard-wrapper {
-    .row {
-      justify-content: center;
-
-      .col-lg-4,
-      .col-md-6 {
-        .dashboard-widget {
-          .user-box {
-            display: flex;
-            align-items: center;
-
-            .thumb {
-              img {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-              }
-            }
-
-            .content {
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              margin-left: 1rem;
-
-              h5 {
-                a {
-                  color: #fff;
-                }
-              }
-
-              span {
-                color: #fff;
-              }
-
-              a {
-                color: #fff;
-                border: 1px solid #fff;
-                padding: 0.5rem 1rem;
-                border-radius: 5px;
-                text-align: center;
-                margin-top: 1rem;
-              }
-            }
-          }
-
-          .dashboard-menu {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            li {
-              a {
-                display: flex;
-                align-items: center;
-                margin-top: 1rem;
-
-                img {
-                  width: 20px;
-                  height: 20px;
-                  margin-right: 1rem;
-                }
-
-                span {
-                  color: #fff;
-                }
-              }
-
-              &.active {
-                a {
-                  color: #000;
-                  font-weight: bold;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .col-lg-8 {
-        .dashboard-right-wrapper {
-          .counter-box {
-            h5 {
-              color: #fff;
-            }
-
-            .activity-items {
-              display: flex;
-              align-items: center;
-
-              .thumb {
-                img {
-                  width: 40px;
-                  height: 40px;
-                }
-              }
-
-              .content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-left: 1rem;
-
-                h3 {
-                  color: #fff;
-                  font-weight: bold;
-                }
-
-                h5 {
-                  color: #fff;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-}
 }
