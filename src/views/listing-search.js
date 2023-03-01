@@ -1,3 +1,5 @@
+console.log('Hello world ');
+
 const productsContainer = document.getElementById('products');
 const searchInput = document.getElementById('search');
 
