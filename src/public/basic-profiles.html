@@ -5,17 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/dist/css/basicProfiles.css">
   <meta name="description"
-    content="Add your favorite items to your BidBay cart and checkout securely. Easily manage your bids and complete your purchases on our platform.">
+    content="View my active listings on BidBay, the premier online auction platform. Browse a wide variety of products and place your bids today!">
 
-  <link rel="stylesheet" href="/dist/css/addToCart.css">
+
 
 
   <!--font awesome link-->
   <script src=" https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
 
+  <title> BidBay | Basic Profile </title>
 
-  <title>Add to Cart | BidBay </title>
+
 </head>
 
 <body class="bg-primary">
@@ -74,58 +76,26 @@
     <div id="header"></div>
 
   </div>
-  <!--========= NVA BAR SECTION ENDS  ======== -->
+
+
   <main>
-    <!--========= Product card here   ======== -->
-    <section id="product-card">
+    <!-- basic-profiles -->
+    <section id="basic-profiles">
       <div class="container">
-        <h1 class="text-center mb-4 text-white fw-bold mt-md-5">Your Cart</h1>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="card mb-3">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-2">
-                    <img src="/assets/img/pexels-car1.jpg" alt="Product Image" class="img-fluid rounded">
-                  </div>
-                  <div class="col-md-4">
-                    <h5 class="card-title">Product Title</h5>
-                    <p class="card-text">Product Description</p>
-                  </div>
-                  <div class="col-md-2">
-                    <p class="card-text">$19.99</p>
-                  </div>
-                  <div class="col-md-2">
-                    <div class="form-floating">
-                      <input type="number" class="form-control" id="quantity" value="1">
-                      <label for="quantity">Quantity</label>
-                    </div>
-                  </div>
-                  <div class="col-md-2">
-                    <button type="button" class="btn btn-danger">Remove</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Add more product cards here -->
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Order Summary</h5>
-                <hr>
-                <p class="card-text">Subtotal: $19.99</p>
-                <p class="card-text">Tax: $2.00</p>
-                <p class="card-text">Shipping: $5.00</p>
-                <hr>
-                <h5 class="card-title">Total: $26.99</h5>
-                <button type="button" class="btn btn-success mt-3">Checkout</button>
-              </div>
+        <div class="row justify-content-center">
+
+          <h1 class="my-4 text-white">All Profiles</h1>
+          <div class="col-10 card-body">
+            <div class="list-group" id="profile-list">
+              <!-- Profiles will be dynamically added here  -->
             </div>
           </div>
         </div>
-      </div>
     </section>
+
+
+
+
     <!--=========  NEWS LETTER SECTION  ======== -->
     <section class="newsletter-section">
       <div class="container">
@@ -145,23 +115,20 @@
         </div>
       </div>
     </section>
-    <!--=========  NEWS LETTER SECTION ENDS  ======== -->
   </main>
 
 
-  <!-- -------------------- THIS IS INSIDE THE COMMONS -------------------------- -->
+  <!-- - THIS IS INSIDE THE COMMONS -------- -->
   <div id="footer"></div>
-
-
-  <!-- Custom JS -->
+  <!--=========  FOOTER SECTION  ENDS ======== -->
   <script src=" /node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="../js/authDecision.js" defer></script>
+  <script defer src="/src/views/basic-profiles.js"></script>v
 
-  <script defer src="../views/shopping-cart.js"></script>
-  <script defer src="../js/logout.js"></script>
-  <script src="/src/views/common.js" defer> </script>
-  <script src="/src/js/product.js"></script>
+  <script src="../js/authDecision.js" defer></script>
+  <script defer src="/src/views/common.js"></script>
+
+  <script defer src="/src/js/logout.js"></script>
 </body>
 
 </html>
