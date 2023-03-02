@@ -1,5 +1,4 @@
 # BidBay-Platform
-<<<<<<< HEAD
 
 Welcome to BidBay, the web platform where you can create and bid on listings! With BidBay, you can sell your items and earn credits, or browse through listings and use your credits to purchase items from other users. Non-registered users can also search through the listings and see what's available.
 
@@ -21,7 +20,7 @@ This web platform allows users to create and bid on listings. When a new user jo
 BidBay is built using the following technologies:
 
 - Node.js v14.17.5
-- Cypress  v12.7.0
+- Cypress v12.7.0
 - Bootstrap v5.2.3
 - Sass v1.58.1
 - Babel v6.23.0
@@ -68,43 +67,25 @@ Clone the repository and run `npm install` to install all dependencies.
 
 ## Usage
 
-Run the following scripts to start the development server, watch for changes, and build the project:
+![Start Icon](https://img.shields.io/badge/-Start-blue) Run the following scripts to start the development server, watch for changes, and build the project:
 
-Once you've installed the dependencies and set up the environment variables, you can start the development server with:
+![Dev Icon](https://img.shields.io/badge/-Dev-green) Once you've installed the dependencies and set up the environment variables, you can start the development server with: `npm run dev`
 
-npm run dev
-
-This will start the server and watch for changes to files. Open your browser and navigate to "live-server" to view the project.
+![Browser Icon](https://img.shields.io/badge/-Browser-blue) This will start the server and watch for changes to files. Open your browser and navigate to "live-server" to view the project.
 
 ## Testing
 
-BidBay is set up with Jest and Supertest for testing. To run the tests, use the following command:
+![Format Icon](https://img.shields.io/badge/-Format-green) Run `npm run format` to format the code.
 
-npm test
+![Lint Icon](https://img.shields.io/badge/-Lint-orange) Run `npm run lint` to lint the code.
 
-Run the following scripts to format, lint, and test the project:
+![Test Icon](https://img.shields.io/badge/-Test-purple) Run `npm run test` to check for Jest tests.
 
-## Format the code
+![Prettier Icon](https://img.shields.io/badge/-Prettier-yellow) Run `npm run prettierCheck` to check for formatting errors.
 
-npm run format
+![Lint:check Icon](https://img.shields.io/badge/-Lint:check-orange) Run `npm run lint:check` to check for linting errors.
 
-## Lint the code
-
-npm run lint
-
-## Check for formatting errors
-
-npm run prettierCheck
-
-## Check for linting errors
-
-npm run lint:check
-
-## Check for Jest tests
-
-npm run test
-
-Contributing
+## Contributing
 
 We welcome contributions to BidBay! If you would like to contribute to the project, please follow these steps:
 
@@ -115,6 +96,8 @@ We welcome contributions to BidBay! If you would like to contribute to the proje
 5. Submit a pull request to the main repository.
 
 ## Credits
+
+![Heart Icon](https://img.shields.io/badge/-Made%20with%20Love-red) This project was created with love by Ethmane Didi.
 
 This project was created by Ethmane Didi as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
 
@@ -128,10 +111,10 @@ In addition to my technical skills, I have excellent communication and problem-s
 
 ## Known Issues
 
+![Bug Icon](https://img.shields.io/badge/-Bug-red) There is a bug in the login feature.
+
 No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
 
 ## License
 
 This project is licensed under the MIT License.
-=======
->>>>>>> main
