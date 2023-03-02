@@ -2,46 +2,44 @@
 
 Welcome to BidBay, the web platform where you can create and bid on listings! With BidBay, you can sell your items and earn credits, or browse through listings and use your credits to purchase items from other users. Non-registered users can also search through the listings and see what's available.
 
-[![Node.js](https://img.shields.io/badge/Node.js-v14.17.5-green.svg)](https://nodejs.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-v4.17.1-blue.svg)](https://expressjs.com/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-v5.2.3-purple.svg)](https://getbootstrap.com/)
-[![Sass](https://img.shields.io/badge/Sass-v1.58.1-pink.svg)](https://sass-lang.com/)
-[![Babel](https://img.shields.io/badge/Babel-v6.23.0-yellow.svg)](https://babeljs.io/)
-[![ESLint](https://img.shields.io/badge/ESLint-v8.34.0-blue.svg)](https://eslint.org/)
-[![Prettier](https://img.shields.io/badge/Prettier-v0.0.0--5-orange.svg)](https://prettier.io/)
-[![Jest](https://img.shields.io/badge/Jest-v29.4.3-purple.svg)](https://jestjs.io/)
-[![Travis CI](https://travis-ci.com/Ousman37/BidBay-Platform.svg?branch=main)](https://travis-ci.com/Ousman37/BidBay-Platform)
-[![Codecov](https://codecov.io/gh/Ousman37/BidBay-Platform/branch/main/graph/badge.svg?token=3F3YQ1K66Z)](https://codecov.io/gh/Ousman37/BidBay-Platform)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/Ousman37/BidBay-Platform/actions)
+[![Bootstrap](https://img.shields.io/badge/bootstrap-5.2.3-blueviolet)](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+[![ESLint](https://img.shields.io/badge/eslint-8.34.0-orange)](https://eslint.org/)
+[![Sass](https://img.shields.io/badge/sass-1.58.1-pink)](https://sass-lang.com/)
+[![Prettier](https://img.shields.io/badge/prettier-0.0.0--5-yellow)](https://prettier.io/)
+[![Jest](https://img.shields.io/badge/jest-29.4.3-purple)](https://jestjs.io/)
+[![Cypress](https://img.shields.io/badge/cypress-12.7.0-brightgreen)](https://www.cypress.io/)
+[![Icons](https://img.shields.io/badge/icons-1.0.0-green)](https://fontawesome.com/)
 
 ## Description
 
 This web platform allows users to create and bid on listings. When a new user joins the website, they are given 1000 credits to use on the site. They can get credits by selling items and use credit by buying items. Non-registered users can search through the listings, but only registered users can make bids on listings.
 
-Technologies Used
+### Technologies Used
 
 BidBay is built using the following technologies:
 
-    Node.js v14.17.5
-    Express.js v4.17.1
-    Bootstrap v5.2.3
-    Sass v1.58.1
-    Babel v6.23.0
-    ESLint v8.34.0
-    Prettier v0.0.0-5
-    Jest v29.4.3
+- Node.js v14.17.5
+- Cypress  v12.7.0
+- Bootstrap v5.2.3
+- Sass v1.58.1
+- Babel v6.23.0
+- ESLint v8.34.0
+- Prettier v0.0.0-5
+- Jest v29.4.3
 
-Features
+### Features
 
 Here are some of the features you can expect when using BidBay:
 
-    Register with your stud.noroff.no email address and start selling or buying items.
-    Login and logout as a registered user.
-    Update your avatar and view your total credit as a registered user.
-    Create a listing with a title, deadline date, media gallery, and description.
-    Add a bid to another user's listing and view bids made on a listing.
-    Search through listings as an unregistered user.
+- Register with your stud.noroff.no email address and start selling or buying items.
+- Login and logout as a registered user.
+- Update your avatar and view your total credit as a registered user.
+- Create a listing with a title, deadline date, media gallery, and description.
+- Add a bid to another user's listing and view bids made on a listing.
+- Search through listings as an unregistered user.
 
-Requirements
+### Requirements
 
 To get started with BidBay, clone this repository and install the dependencies:
 
@@ -52,16 +50,24 @@ You'll also need to create a `.env` file in the root directory with the followin
 SESSION_SECRET=<your_session_secret>
 API_URL=<api_url>
 
-Replace <your_session_secret> with a random string of characters that will be used as the session secret. Replace <api_url> with the URL of the Auction API that you will be using.
+Replace `<your_session_secret>` with a random string of characters that will be used as the session secret. Replace `<api_url>` with the URL of the Auction API that you will be using.
 
-## Resources
+### Resources
 
 Here are some resources you can use to learn more about the API used by BidBay:
 
-    API Swagger
-    Noroff API documentation
+- [API Swagger](https://auction-api.northeurope.cloudapp.azure.com/swagger/index.html)
+- [Noroff API documentation](https://github.com/NoroffFEU/full-stack-web-development
 
-## Getting Started
+### Getting Started
+
+## Installation
+
+Clone the repository and run `npm install` to install all dependencies.
+
+## Usage
+
+Run the following scripts to start the development server, watch for changes, and build the project:
 
 Once you've installed the dependencies and set up the environment variables, you can start the development server with:
 
@@ -75,7 +81,29 @@ BidBay is set up with Jest and Supertest for testing. To run the tests, use the 
 
 npm test
 
-## Contributing
+Run the following scripts to format, lint, and test the project:
+
+## Format the code
+
+npm run format
+
+## Lint the code
+
+npm run lint
+
+## Check for formatting errors
+
+npm run prettierCheck
+
+## Check for linting errors
+
+npm run lint:check
+
+## Check for Jest tests
+
+npm run test
+
+Contributing
 
 We welcome contributions to BidBay! If you would like to contribute to the project, please follow these steps:
 
@@ -96,6 +124,10 @@ I am Ethmane, a front-end developer student currently in my final year of studie
 I'm passionate about creating beautiful and functional websites that provide a great user experience. Currently, I'm looking for a job opportunity or small project where I can further develop my skills and gain practical experience in the field.
 
 In addition to my technical skills, I have excellent communication and problem-solving abilities, and I enjoy working collaboratively in a team environment. If you're interested in working with me or have any questions, please feel free to reach out at Ousman.didibela@gmail.com. I'd be happy to hear from you!
+
+## Known Issues
+
+No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
 
 ## License
 
