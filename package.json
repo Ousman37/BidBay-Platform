@@ -13,7 +13,8 @@
     "lint:check": "eslint .",
     "prettierCheck": "prettier --check \"src/**/*.js\"",
     "eslintCheck": "eslint",
-    "test": "jest "
+    "test": "jest ",
+     "npm ": "run test"
   },
   "repository": {
     "type": "git",
