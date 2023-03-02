@@ -1,4 +1,5 @@
 # BidBay-Platform
+<<<<<<< HEAD
 
 Welcome to BidBay, the web platform where you can create and bid on listings! With BidBay, you can sell your items and earn credits, or browse through listings and use your credits to purchase items from other users. Non-registered users can also search through the listings and see what's available.
 
@@ -132,3 +133,5 @@ No known issues at this time. If you encounter any issues, please submit them to
 ## License
 
 This project is licensed under the MIT License.
+=======
+>>>>>>> main
