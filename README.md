@@ -67,43 +67,32 @@ Clone the repository and run `npm install` to install all dependencies.
 
 ## Usage
 
-Run the following scripts to start the development server, watch for changes, and build the project:
+![Start Icon](https://img.shields.io/badge/-Start-blue) Run the following scripts to start the development server, watch for changes, and build the project:
 
-Once you've installed the dependencies and set up the environment variables, you can start the development server with:
+![Dev Icon](https://img.shields.io/badge/-Dev-green) Once you've installed the dependencies and set up the environment variables, you can start the development server with: `npm run dev`
 
-npm run dev
-
-This will start the server and watch for changes to files. Open your browser and navigate to "live-server" to view the project.
+![Browser Icon](https://img.shields.io/badge/-Browser-blue) This will start the server and watch for changes to files. Open your browser and navigate to "live-server" to view the project.
 
 ## Testing
 
-BidBay is set up with Jest and Supertest for testing. To run the tests, use the following command:
+![Format Icon](https://img.shields.io/badge/-Format-green) Run `npm run format` to format the code.
 
-npm test
+![Lint Icon](https://img.shields.io/badge/-Lint-orange) Run `npm run lint` to lint the code.
 
-Run the following scripts to format, lint, and test the project:
+![Test Icon](https://img.shields.io/badge/-Test-purple) Run `npm run test` to check for Jest tests.
 
-## Format the code
+![Prettier Icon](https://img.shields.io/badge/-Prettier-yellow) Run `npm run prettierCheck` to check for formatting errors.
 
-npm run format
+![Lint:check Icon](https://img.shields.io/badge/-Lint:check-orange) Run `npm run lint:check` to check for linting errors.
 
-## Lint the code
 
-npm run lint
 
-## Check for formatting errors
 
-npm run prettierCheck
 
-## Check for linting errors
 
-npm run lint:check
 
-## Check for Jest tests
 
-npm run test
-
-Contributing
+## Contributing
 
 We welcome contributions to BidBay! If you would like to contribute to the project, please follow these steps:
 
@@ -115,6 +104,9 @@ We welcome contributions to BidBay! If you would like to contribute to the proje
 
 ## Credits
 
+![Heart Icon](https://img.shields.io/badge/-Made%20with%20Love-red) This project was created with love by Ethmane Didi.
+
+
 This project was created by Ethmane Didi as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
 
 ## About Me
@@ -125,7 +117,11 @@ I'm passionate about creating beautiful and functional websites that provide a g
 
 In addition to my technical skills, I have excellent communication and problem-solving abilities, and I enjoy working collaboratively in a team environment. If you're interested in working with me or have any questions, please feel free to reach out at Ousman.didibela@gmail.com. I'd be happy to hear from you!
 
+
 ## Known Issues
+
+![Bug Icon](https://img.shields.io/badge/-Bug-red) There is a bug in the login feature.
+
 
 No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
 
