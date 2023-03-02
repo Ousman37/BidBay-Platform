@@ -4,17 +4,17 @@
   "description": "A web platform for creating and bidding on listings",
   "main": "index.js",
   "scripts": {
-    "dev": " src/routes/index.js",
-    "build": "sass src/scss:dist/css",
-    "transpile": "babel src -d dist",
-    "format": "prettier --write \"src/**/*.js\" ",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "sass src/scss:dist/css",
+    "build:js": "babel src -d dist",
+    "format": "prettier --write \"src/**/*.js\"",
     "watch": "sass --watch src/scss:dist/css & live-server",
     "lint": "eslint . --fix",
     "lint:check": "eslint .",
     "prettierCheck": "prettier --check \"src/**/*.js\"",
     "eslintCheck": "eslint",
-    "test": "jest ",
-     "npm ": "run test"
+    "test": "jest",
+    "start": "npm run watch"
   },
   "repository": {
     "type": "git",
