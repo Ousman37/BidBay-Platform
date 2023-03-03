@@ -4,7 +4,6 @@
   "description": "A web platform for creating and bidding on listings",
   "main": "index.js",
   "scripts": {
-    "start": "live-server",
     "build": "sass src/scss:dist/css",
     "transpile": "babel src -d dist",
     "format": "prettier --write \"src/**/*.js\" ",
