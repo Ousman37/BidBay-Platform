@@ -1,23 +1,39 @@
-steps:
-  - name: Checkout code
-    uses: actions/checkout@v2
-    with:
-      ref: ${{ github.event.ref }}
 
-  - name: Use Node.js 16.x
-    uses: actions/setup-node@v2
-    with:
-      node-version: '16.x'
+name: Deploy to Netlify
 
-  - name: Install dependencies
-    run: npm install
+on:
+  push:
+    branches:
+      - main
 
-  - name: Build the app
-    run: |
-      npm run build
-      sass src/scss:dist/css
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
 
-  - name: Deploy to Netlify
-    uses: netlify/actions/cli@master
-    with:
-      args: deploy --prod --dir=./dist
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.ref }}
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Compile Sass
+        run: sass src/scss/style.scss dist/css/style.css
+
+      - name: Build the app
+        run: npm run build
+
+      - name: Deploy to Netlify
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --prod
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
