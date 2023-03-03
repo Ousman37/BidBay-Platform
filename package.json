@@ -8,6 +8,7 @@
     "build": "sass src/scss:dist/css",
     "transpile": "babel src -d dist",
     "format": "prettier --write \"src/**/*.js\" ",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --fix",
     "lint:check": "eslint .",
     "prettierCheck": "prettier --check \"src/**/*.js\"",
@@ -39,6 +40,7 @@
     "babel": "^6.23.0",
     "bootstrap": "^5.2.3",
     "cypress": "^12.7.0",
+    "gh-pages": "^5.0.0",
     "prettierrc": "^0.0.0-5",
     "sass": "^1.58.1"
   },
