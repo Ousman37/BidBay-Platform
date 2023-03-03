@@ -70,30 +70,32 @@ function getAllProducts() {
   }
 }
 
-// Search products based on input value
-function searchProducts(event) {
-  const searchTerm = event.target.value.toLowerCase();
-  fetch(`${ListingsURL}`, {
-    method: 'GET',
-    headers: options,
-  })
-    .then(response => response.json())
-    .then(res => {
-      const filteredProducts = res.filter(product => {
-        return (
-          product.title.toLowerCase().includes(searchTerm) ||
-          product.description.toLowerCase().includes(searchTerm)
-        );
-      });
-      createProductCards(filteredProducts);
-    })
-    .catch(err => {
-      console.log('Error -- ', err.message);
-    });
-}
+// // Search products based on input value
+// function searchProducts(event) {
+//   const searchTerm = event.target.value.toLowerCase();
+//   fetch(`${ListingsURL}`, {
+//     method: 'GET',
+//     headers: options,
+//   })
+//     .then(response => response.json())
+//     .then(res => {
+//       const filteredProducts = res.filter(product => {
+//         return (
+//           product.title.toLowerCase().includes(searchTerm) ||
+//           product.description.toLowerCase().includes(searchTerm)
+//         );
+//       });
+//       createProductCards(filteredProducts);
+//     })
+//     .catch(err => {
+//       console.log('Error -- ', err.message);
+//     });
+// }
 
-// Add event listeners
-searchInput.addEventListener('input', searchProducts);
+// // Add event listeners
+// searchInput.addEventListener('input', searchProducts);
 
-// Create product cards on page load
+// // Create product cards on page load
+//
+
 getAllProducts();
