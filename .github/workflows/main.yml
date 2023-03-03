@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - development
 
 jobs:
   build-and-deploy:
@@ -24,16 +25,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Compile Sass
-        run: sass src/scss/style.scss dist/css/style.css
-
       - name: Build the app
-        run: npm run build
+        run: |
+          npm run build
+          sass src/scss/style.scss dist/css/style.css
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
-        with:
-          args: deploy --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
