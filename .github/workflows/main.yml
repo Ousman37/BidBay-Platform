@@ -24,9 +24,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install sass
+        run: sudo npm install -g sass
+
       - name: Build the app
         run: npm run build
 
       - name: Deploy to Netlify
         uses: netlify/actions/cli@master
-      
+
