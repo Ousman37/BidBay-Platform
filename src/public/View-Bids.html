@@ -9,7 +9,7 @@
   <meta name="description"
     content="View the current bids on items up for auction on BidBay. Find great deals and place your own bids to win! Stay up-to-date with the latest bidding activity on BidBay.">
 
-  <link rel="stylesheet" href="../../dist/css/ViewBids.css">
+  <link rel="stylesheet" href="/dist/css/ViewBids.css">
 
   <!--font awesome link-->
   <script src="https://kit.fontawesome.com/03d5a1f99a.js" crossorigin="anonymous"></script>
@@ -78,45 +78,26 @@
     <!----- View Bids  SECTION  ----->
     <section class="View-bids">
       <div class="container">
-        <h1 class="text-center text-white fw-bold">View Bids Page:</h1>
-        <div id="bids-list"></div>
+        <h1 class="text-white text-center fs-1 fw-bolder">Bids for Listing 1234</h1>
+        <table>
+          <thead>
+            <tr>
+              <th class="text-white"> Bid Amount</th>
+              <th class="text-white">Bidder</th>
+              <th class="text-white">Date</th>
+            </tr>
+          </thead>
+          <tbody id="bid-list">
+            <!-- Bid rows will be generated dynamically using JavaScript -->
+          </tbody>
+        </table>
       </div>
     </section>
 
 
+
+
     
-    <!-- <section class="View-bids">
-      <div class="container">
-        <h1 class="text-center text-white fw-bold">View Bids Page:</h1>
-        <table>
-          <thead>
-            <tr>
-              <th class="text-white fw-bolder fs-3">Bidder Name</th>
-              <th class="text-white fw-bolder fs-3">Bid Amount</th>
-              <th class="text-white fw-bolder fs-3">Bid Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="text-white fw-bold fs-2">John</td>
-              <td class="text-white fs-3">$100</td>
-              <td class="text-white fs-3">2021-08-01</td>
-            </tr>
-            <tr>
-              <td class="text-white fw-bold fs-2">Sara</td>
-              <td class="text-white fs-3">$150</td>
-              <td class="text-white fs-3">2021-08-03</td>
-            </tr>
-            <tr>
-              <td class="text-white fw-bold fs-2">Mike</td>
-              <td class="text-white fs-3">$200</td>
-              <td class="text-white fs-3">2021-08-04</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      </div>
-    </section> -->
     <!----- NEWS LETTER SECTION ------>
     <section class="newsletter-section">
       <div class="container">
@@ -144,6 +125,8 @@
   <!--=========  FOOTER SECTION  ENDS ======== -->
 
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <script src="../js/authDecision.js" defer></script>
 
