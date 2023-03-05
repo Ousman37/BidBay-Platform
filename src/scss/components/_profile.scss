@@ -1,3 +1,38 @@
+.pathway-header {
+  padding: 16rem;
+
+  .bread-link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-right: 0.5rem;
+
+      &:last-child {
+        font-weight: bold;
+        color: #333;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .fas {
+        margin: 0 0.2rem;
+        color: #333;
+      }
+    }
+  }
+}
+
 .pathway-section {
   display: flex;
   justify-content: center;
@@ -497,23 +532,22 @@
   margin-top: 83rem;
   width: 70%;
   margin-left: 13rem;
- 
 
   .news-btn {
-        margin-top: 0rem;
-        padding: 18px 24px;
-        border: none;
-        font-weight: 700;
-        background-color: #00c48c;
-        color: #fff;
-        text-transform: uppercase;
-        border-radius: 3px;
-        cursor: pointer;
+    margin-top: 0rem;
+    padding: 18px 24px;
+    border: none;
+    font-weight: 700;
+    background-color: #00c48c;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
 
-        &:hover {
-          background-color: #009c6a;
-        }
-      }
+    &:hover {
+      background-color: #009c6a;
+    }
+  }
 
   // .icon-div {
   //   margin-bottom: 30px;
@@ -584,7 +618,6 @@
   //   }
   // }
 }
-
 
 /* NEWSLETTER */
 .newsletter-section {
@@ -730,7 +763,7 @@
 }
 
 .new-home-btn {
-     background-color: #00c48c;
+  background-color: #00c48c;
   color: #fff;
   padding: 15px 50px;
   border-radius: 5px;
@@ -740,7 +773,6 @@
   display: inline-block;
   margin-top: 1px;
 }
-
 
 // Responsive design
 @media screen and (max-width: 991px) {
