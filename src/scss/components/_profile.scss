@@ -1,3 +1,38 @@
+.pathway-header {
+  padding: 16rem;
+
+  .bread-link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-right: 0.5rem;
+
+      &:last-child {
+        font-weight: bold;
+        color: #333;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .fas {
+        margin: 0 0.2rem;
+        color: #333;
+      }
+    }
+  }
+}
+
 .pathway-section {
   display: flex;
   justify-content: center;
@@ -512,6 +547,78 @@
       background-color: #009c6a;
     }
   }
+<<<<<<< HEAD
+=======
+
+  // .icon-div {
+  //   margin-bottom: 30px;
+
+  //   img {
+  //     max-width: 100%;
+  //     height: auto;
+  //   }
+  // }
+
+  // .content {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   align-items: center;
+  //   justify-content: center;
+
+  //   h2 {
+  //     font-size: 24px;
+  //     font-weight: 600;
+  //     line-height: 32px;
+  //     margin-bottom: 30px;
+  //     text-align: center;
+  //     width: 100%;
+  //   }
+
+  //   p {
+  //     text-align: center;
+  //     margin-bottom: 30px;
+  //     width: 100%;
+  //   }
+
+  //   .newsletter-form {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     align-items: center;
+  //     justify-content: center;
+  //     flex: 1;
+
+  //     .form-input {
+  //       width: 100%;
+  //       max-width: 300px;
+  //       padding: 10px;
+  //       margin-right: 20px;
+  //       border: 1px solid #ddd;
+  //       border-radius: 3px;
+  //       font-size: 1.2rem;
+
+  //       &:focus {
+  //         outline: rgb(60, 110, 189) auto 1px;
+  //       }
+  //     }
+
+  //     .news-btn {
+  //       margin-top: -2rem;
+  //       padding: 18px 24px;
+  //       border: none;
+  //       font-weight: 700;
+  //       background-color: #00c48c;
+  //       color: #fff;
+  //       text-transform: uppercase;
+  //       border-radius: 3px;
+  //       cursor: pointer;
+
+  //       &:hover {
+  //         background-color: #009c6a;
+  //       }
+  //     }
+  //   }
+  // }
+>>>>>>> development
 }
 
 /* NEWSLETTER */

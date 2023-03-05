@@ -101,11 +101,17 @@ We welcome contributions to BidBay! If you would like to contribute to the proje
 
 This project was created by Ethmane Didi as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
 
+<<<<<<< HEAD
 
 
 ## Known Issues
 
 ![Bug Icon](https://img.shields.io/badge/-Bug-red) There is a bug in the  Github Pages feature.
+=======
+## Known Issues
+
+![Bug Icon](https://img.shields.io/badge/-Bug-red) There is a bug in the Github Pages feature.
+>>>>>>> development
 
 The CSS on the BidBay-Platform website is not loading correctly on Github Pages. The website is displaying correctly on my local machine and other hosting services, but the CSS is not displaying on Github Pages. I've tried clearing my cache and rebuilding the website, but the issue persists.
 
@@ -129,10 +135,15 @@ The following issues are known to exist in this project:
 
 We are actively working to address these issues and appreciate your patience as we work to improve the site. If you encounter any other issues or have feedback on how we can improve the site, please let us know by contacting us at [Ousman.didibela@gmail.com](mailto:support@example.com).
 
+<<<<<<< HEAD
 
 No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
 
 
+=======
+No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
+
+>>>>>>> development
 ## Required Links
 
 The Product Owner has requested links to the following:
@@ -144,8 +155,11 @@ The Product Owner has requested links to the following:
 - [Repository link](https://example.com/repository)
 - [Hosted application demo link](https://example.com/demo)
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> development
 ## About Me
 
 I am Ethmane, a front-end developer student currently in my final year of studies. This project was created as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
@@ -153,9 +167,13 @@ I am Ethmane, a front-end developer student currently in my final year of studie
 I'm passionate about creating beautiful and functional websites that provide a great user experience. Currently, I'm looking for a job opportunity or small project where I can further develop my skills and gain practical experience in the field.
 
 In addition to my technical skills, I have excellent communication and problem-solving abilities, and I enjoy working collaboratively in a team environment. If you're interested in working with me or have any questions, please feel free to reach out at [Ousman.didibela@gmail.com](mailto:support@example.com).
+<<<<<<< HEAD
  I'd be happy to hear from you!
 
 
+=======
+I'd be happy to hear from you!
+>>>>>>> development
 
 ## License
 

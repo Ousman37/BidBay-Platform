@@ -39,11 +39,13 @@
 }
 
 .dashboard {
+  padding: 60px 0;
+  height: 84vh;
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 156vh;
+    
   }
 }
 
@@ -361,6 +363,13 @@
   }
 }
 //Dashboard Profile section
+
+@media screen and (max-width: 1124px) {
+  .pathway-content ul li {
+    font-size: 14px;
+  }
+}
+
 
 @media screen and (max-width: 991px) {
   .dashboard-right-wrapper {
