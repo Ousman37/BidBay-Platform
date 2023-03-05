@@ -27,12 +27,12 @@ function createProductCards(products) {
           <p class="card-text">${product.description}</p>
           <div class="d-flex justify-content-between align-items-center">
             <a href="/src/public/bid_listing.html?id=${product.id}" class="btn btn-sm btn-outline-secondary">Add Bid Now</a>
-<<<<<<< HEAD
+
             <a href="/src/public/view-Bids.html?id=${product.id}" class="btn btn-sm btn-outline-secondary">View Bids</a>
             
-=======
+
             <a href="/src/public/view-bids.html" class="btn btn-sm btn-outline-secondary">View Now</a>
->>>>>>> development
+
           </div>
         </div>
       </div>
@@ -57,19 +57,14 @@ function getAllProducts(event) {
     })
       .then(response => response.json())
       .then(res => {
-        if(searchTerm)
-        {
+        if (searchTerm) {
           const filteredProducts = res.filter(product => {
-            return (
-              product.title.toLowerCase().includes(searchTerm)
-            );
+            return product.title.toLowerCase().includes(searchTerm);
           });
           createProductCards(filteredProducts);
-        }
-        else{
+        } else {
           createProductCards(res);
         }
-      
       })
       .catch(err => {
         console.log('Error -- ', err.message);
@@ -86,7 +81,6 @@ function getAllProducts(event) {
       .then(response => response.json())
 
       .then(res => {
-<<<<<<< HEAD
         if (!searchPhrase === '') {
           createProductCards(res);
         } else {
@@ -97,21 +91,15 @@ function getAllProducts(event) {
           });
           createProductCards(searchedData);
         }
-=======
-        if(searchTerm)
-        {
+
+        if (searchTerm) {
           const filteredProducts = res.filter(product => {
-            return (
-              product.title.toLowerCase().includes(searchTerm)
-            );
+            return product.title.toLowerCase().includes(searchTerm);
           });
           createProductCards(filteredProducts);
-        }
-        else{
+        } else {
           createProductCards(res);
         }
-      
->>>>>>> development
       })
       .catch(err => {
         console.log('Error -- ', err.message);
@@ -119,11 +107,10 @@ function getAllProducts(event) {
   }
 }
 
-<<<<<<< HEAD
 search.addEventListener('keydown', () => {
   getAllProducts();
 });
-=======
+
 // // Search products based on input value
 // function searchProducts(event) {
 //   const searchTerm = event.target.value.toLowerCase();
@@ -151,6 +138,5 @@ searchInput.addEventListener('input', getAllProducts);
 
 // // Create product cards on page load
 //
->>>>>>> development
 
 getAllProducts();
