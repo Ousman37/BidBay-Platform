@@ -2,36 +2,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 37vh; /* Optional: set the height to the full viewport height */
-
-  .pathway-content {
+  height: 37vh;
+  viewport height .pathway-content {
     ul {
-      list-style: none; // Remove default bullet points
-      display: flex; // Display list items in a row
-      align-items: center; // Center items vertically
-      justify-content: flex-start; // Align items to the left
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       font-size: 16px;
       margin: 0;
       padding: 0;
 
       li {
         a {
-          color: #333; // Set link color
-          text-decoration: none; // Remove underline
-          transition: color 0.2s ease-in-out; // Add smooth transition to link color
+          color: #333;
+          text-decoration: none;
+          transition: color 0.2s ease-in-out;
           &:hover {
-            color: #007bff; // Change link color on hover
+            color: #007bff;
           }
         }
 
         i {
           font-size: 12px;
-          color: #ccc; // Set color for the icon
-          margin: 0 10px; // Add some space around the icon
+          color: #ccc;
+          margin: 0 10px;
         }
 
         &:last-child {
-          font-weight: bold; // Make the last item bold
+          font-weight: bold;
         }
       }
     }
@@ -497,94 +496,23 @@
   margin-top: 83rem;
   width: 70%;
   margin-left: 13rem;
- 
 
   .news-btn {
-        margin-top: 0rem;
-        padding: 18px 24px;
-        border: none;
-        font-weight: 700;
-        background-color: #00c48c;
-        color: #fff;
-        text-transform: uppercase;
-        border-radius: 3px;
-        cursor: pointer;
+    margin-top: 0rem;
+    padding: 18px 24px;
+    border: none;
+    font-weight: 700;
+    background-color: #00c48c;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
 
-        &:hover {
-          background-color: #009c6a;
-        }
-      }
-
-  // .icon-div {
-  //   margin-bottom: 30px;
-
-  //   img {
-  //     max-width: 100%;
-  //     height: auto;
-  //   }
-  // }
-
-  // .content {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   align-items: center;
-  //   justify-content: center;
-
-  //   h2 {
-  //     font-size: 24px;
-  //     font-weight: 600;
-  //     line-height: 32px;
-  //     margin-bottom: 30px;
-  //     text-align: center;
-  //     width: 100%;
-  //   }
-
-  //   p {
-  //     text-align: center;
-  //     margin-bottom: 30px;
-  //     width: 100%;
-  //   }
-
-  //   .newsletter-form {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     align-items: center;
-  //     justify-content: center;
-  //     flex: 1;
-
-  //     .form-input {
-  //       width: 100%;
-  //       max-width: 300px;
-  //       padding: 10px;
-  //       margin-right: 20px;
-  //       border: 1px solid #ddd;
-  //       border-radius: 3px;
-  //       font-size: 1.2rem;
-
-  //       &:focus {
-  //         outline: rgb(60, 110, 189) auto 1px;
-  //       }
-  //     }
-
-  //     .news-btn {
-  //       margin-top: -2rem;
-  //       padding: 18px 24px;
-  //       border: none;
-  //       font-weight: 700;
-  //       background-color: #00c48c;
-  //       color: #fff;
-  //       text-transform: uppercase;
-  //       border-radius: 3px;
-  //       cursor: pointer;
-
-  //       &:hover {
-  //         background-color: #009c6a;
-  //       }
-  //     }
-  //   }
-  // }
+    &:hover {
+      background-color: #009c6a;
+    }
+  }
 }
-
 
 /* NEWSLETTER */
 .newsletter-section {
@@ -730,7 +658,7 @@
 }
 
 .new-home-btn {
-     background-color: #00c48c;
+  background-color: #00c48c;
   color: #fff;
   padding: 15px 50px;
   border-radius: 5px;
@@ -740,7 +668,6 @@
   display: inline-block;
   margin-top: 1px;
 }
-
 
 // Responsive design
 @media screen and (max-width: 991px) {
@@ -781,6 +708,56 @@
 }
 
 @media screen and (max-width: 500px) {
+  .personal-profile-inner {
+    padding: 20px;
+    .profile-items {
+      .box-one {
+        padding: 20px;
+
+        li {
+          display: block;
+
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+
+          .dots {
+            margin-right: 0px;
+            &::after {
+              display: none;
+            }
+
+            font-weight: 500;
+            font-size: 16px;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+
+        .update {
+          &:not(:last-child) {
+            border: none;
+          }
+        }
+      }
+
+      .profile-update-address {
+        padding: 15px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .pathway-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+  }
   .personal-profile-inner {
     padding: 20px;
     .profile-items {

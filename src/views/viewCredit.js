@@ -14,3 +14,5 @@ if (memoryCredits) {
 } else {
     document.getElementById('totalCredit').innerHTML = credits;
 }
+
+

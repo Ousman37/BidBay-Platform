@@ -15,6 +15,7 @@ const ListingsURL = 'https://api.noroff.dev/api/v1/auction/listings';
 // Fetch data and create product cards
 function createProductCards(products) {
   productsContainer.innerHTML = '';
+
   products.forEach(product => {
     const productCard = document.createElement('div');
     productCard.className = 'col-md-4';
@@ -26,7 +27,8 @@ function createProductCards(products) {
           <p class="card-text">${product.description}</p>
           <div class="d-flex justify-content-between align-items-center">
             <a href="/src/public/bid_listing.html?id=${product.id}" class="btn btn-sm btn-outline-secondary">Add Bid Now</a>
-            <small class="text-muted fs-1">${product._count.bids}</small>
+            <a href="/src/public/view-Bids.html?id=${product.id}" class="btn btn-sm btn-outline-secondary">View Bids</a>
+            
           </div>
         </div>
       </div>
@@ -35,6 +37,7 @@ function createProductCards(products) {
   });
 }
 
+const search = document.getElementById('search-product');
 // Get all products from API and create product cards
 function getAllProducts() {
   // Check if user is logged in
@@ -56,13 +59,26 @@ function getAllProducts() {
       });
   } else {
     // Fetch all listings for unregistered users
+
+    const searchPhrase = search.value;
+
     fetch(`${ListingsURL}`, {
       method: 'GET',
       headers: options,
     })
       .then(response => response.json())
+
       .then(res => {
-        createProductCards(res);
+        if (!searchPhrase === '') {
+          createProductCards(res);
+        } else {
+          const searchedData = res.filter(item => {
+            return item.title
+              .toLowerCase()
+              .includes(searchPhrase.toLowerCase());
+          });
+          createProductCards(searchedData);
+        }
       })
       .catch(err => {
         console.log('Error -- ', err.message);
@@ -70,32 +86,8 @@ function getAllProducts() {
   }
 }
 
-// // Search products based on input value
-// function searchProducts(event) {
-//   const searchTerm = event.target.value.toLowerCase();
-//   fetch(`${ListingsURL}`, {
-//     method: 'GET',
-//     headers: options,
-//   })
-//     .then(response => response.json())
-//     .then(res => {
-//       const filteredProducts = res.filter(product => {
-//         return (
-//           product.title.toLowerCase().includes(searchTerm) ||
-//           product.description.toLowerCase().includes(searchTerm)
-//         );
-//       });
-//       createProductCards(filteredProducts);
-//     })
-//     .catch(err => {
-//       console.log('Error -- ', err.message);
-//     });
-// }
-
-// // Add event listeners
-// searchInput.addEventListener('input', searchProducts);
-
-// // Create product cards on page load
-//
+search.addEventListener('keydown', () => {
+  getAllProducts();
+});
 
 getAllProducts();
