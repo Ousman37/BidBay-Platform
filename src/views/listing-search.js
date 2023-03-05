@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // console.log('hello');
 
 // $(document).ready(function () {
@@ -18,8 +18,6 @@
 //   });
 // });
 
-
-=======
 
 
 // Define productsContainer in a higher scope
@@ -78,4 +76,4 @@ function searchProducts(event) {
 
 // Add event listeners
 searchInput.addEventListener('input', searchProducts);
->>>>>>> development
+
