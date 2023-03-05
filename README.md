@@ -113,7 +113,28 @@ In addition to my technical skills, I have excellent communication and problem-s
 
 ![Bug Icon](https://img.shields.io/badge/-Bug-red) There is a bug in the login feature.
 
+The following issues are known to exist in this project:
+
+- The "Contact Us" form on the website is currently not functional.
+- The page at https://ubiquitous-entremet-2c4399.netlify.app/ is currently showing a "Page Not Found" error.
+
+We are actively working to address these issues and appreciate your patience as we work to improve the site. If you encounter any other issues or have feedback on how we can improve the site, please let us know by contacting us at [support@example.com](mailto:support@example.com).
+
+
 No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
+
+
+## Required Links
+
+The Product Owner has requested links to the following:
+
+- [Gantt chart for project timing](https://example.com/gantt-chart)
+- [Design prototype](https://example.com/design-prototype)
+- [Style guide](https://example.com/style-guide)
+- [Kanban project board](https://example.com/kanban-board)
+- [Repository link](https://example.com/repository)
+- [Hosted application demo link](https://example.com/demo)
+
 
 ## License
 
