@@ -101,13 +101,7 @@ We welcome contributions to BidBay! If you would like to contribute to the proje
 
 This project was created by Ethmane Didi as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
 
-## About Me
 
-I am Ethmane, a front-end developer student currently in my final year of studies. This project was created as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
-
-I'm passionate about creating beautiful and functional websites that provide a great user experience. Currently, I'm looking for a job opportunity or small project where I can further develop my skills and gain practical experience in the field.
-
-In addition to my technical skills, I have excellent communication and problem-solving abilities, and I enjoy working collaboratively in a team environment. If you're interested in working with me or have any questions, please feel free to reach out at Ousman.didibela@gmail.com. I'd be happy to hear from you!
 
 ## Known Issues
 
@@ -133,7 +127,7 @@ The following issues are known to exist in this project:
 - The "Contact Us" form on the website is currently not functional.
 - The page at https://ubiquitous-entremet-2c4399.netlify.app/ is currently showing a "Page Not Found" error.
 
-We are actively working to address these issues and appreciate your patience as we work to improve the site. If you encounter any other issues or have feedback on how we can improve the site, please let us know by contacting us at [support@example.com](mailto:support@example.com).
+We are actively working to address these issues and appreciate your patience as we work to improve the site. If you encounter any other issues or have feedback on how we can improve the site, please let us know by contacting us at [Ousman.didibela@gmail.com](mailto:support@example.com).
 
 
 No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
@@ -149,6 +143,18 @@ The Product Owner has requested links to the following:
 - [Kanban project board](https://example.com/kanban-board)
 - [Repository link](https://example.com/repository)
 - [Hosted application demo link](https://example.com/demo)
+
+
+
+## About Me
+
+I am Ethmane, a front-end developer student currently in my final year of studies. This project was created as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
+
+I'm passionate about creating beautiful and functional websites that provide a great user experience. Currently, I'm looking for a job opportunity or small project where I can further develop my skills and gain practical experience in the field.
+
+In addition to my technical skills, I have excellent communication and problem-solving abilities, and I enjoy working collaboratively in a team environment. If you're interested in working with me or have any questions, please feel free to reach out at [Ousman.didibela@gmail.com](mailto:support@example.com).
+ I'd be happy to hear from you!
+
 
 
 ## License
