@@ -71,8 +71,5 @@ function searchProducts(event) {
     });
 }
 
-
 // Add event listeners
 searchInput.addEventListener('input', searchProducts);
-
-
