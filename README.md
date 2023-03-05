@@ -101,19 +101,53 @@ We welcome contributions to BidBay! If you would like to contribute to the proje
 
 This project was created by Ethmane Didi as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
 
+## Known Issues
+
+![Bug Icon](https://img.shields.io/badge/-Bug-red) There is a bug in the Github Pages feature.
+
+The CSS on the BidBay-Platform website is not loading correctly on Github Pages. The website is displaying correctly on my local machine and other hosting services, but the CSS is not displaying on Github Pages. I've tried clearing my cache and rebuilding the website, but the issue persists.
+
+## Steps to Reproduce
+
+1. Open the website on Github Pages at https://ousman37.github.io/BidBay-Platform/.
+2. Note that the website is not displaying correctly due to the CSS not loading.
+
+## Expected Result
+
+The website should display correctly, with all CSS loading correctly.
+
+## Actual Result
+
+The website is not displaying correctly due to the CSS not loading.
+
+The following issues are known to exist in this project:
+
+- The "Contact Us" form on the website is currently not functional.
+- The page at https://ubiquitous-entremet-2c4399.netlify.app/ is currently showing a "Page Not Found" error.
+
+We are actively working to address these issues and appreciate your patience as we work to improve the site. If you encounter any other issues or have feedback on how we can improve the site, please let us know by contacting us at [Ousman.didibela@gmail.com](mailto:support@example.com).
+
+No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
+
+## Required Links
+
+The Product Owner has requested links to the following:
+
+- [Gantt chart for project timing](https://example.com/gantt-chart)
+- [Design prototype](https://example.com/design-prototype)
+- [Style guide](https://example.com/style-guide)
+- [Kanban project board](https://example.com/kanban-board)
+- [Repository link](https://example.com/repository)
+- [Hosted application demo link](https://example.com/demo)
+
 ## About Me
 
 I am Ethmane, a front-end developer student currently in my final year of studies. This project was created as part of a group project for the Full Stack Web Development course at Noroff School of Technology and Digital Media.
 
 I'm passionate about creating beautiful and functional websites that provide a great user experience. Currently, I'm looking for a job opportunity or small project where I can further develop my skills and gain practical experience in the field.
 
-In addition to my technical skills, I have excellent communication and problem-solving abilities, and I enjoy working collaboratively in a team environment. If you're interested in working with me or have any questions, please feel free to reach out at Ousman.didibela@gmail.com. I'd be happy to hear from you!
-
-## Known Issues
-
-![Bug Icon](https://img.shields.io/badge/-Bug-red) There is a bug in the login feature.
-
-No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
+In addition to my technical skills, I have excellent communication and problem-solving abilities, and I enjoy working collaboratively in a team environment. If you're interested in working with me or have any questions, please feel free to reach out at [Ousman.didibela@gmail.com](mailto:support@example.com).
+I'd be happy to hear from you!
 
 ## License
 
