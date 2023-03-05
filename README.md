@@ -111,7 +111,22 @@ In addition to my technical skills, I have excellent communication and problem-s
 
 ## Known Issues
 
-![Bug Icon](https://img.shields.io/badge/-Bug-red) There is a bug in the login feature.
+![Bug Icon](https://img.shields.io/badge/-Bug-red) There is a bug in the  Github Pages feature.
+
+The CSS on the BidBay-Platform website is not loading correctly on Github Pages. The website is displaying correctly on my local machine and other hosting services, but the CSS is not displaying on Github Pages. I've tried clearing my cache and rebuilding the website, but the issue persists.
+
+## Steps to Reproduce
+
+1. Open the website on Github Pages at https://ousman37.github.io/BidBay-Platform/.
+2. Note that the website is not displaying correctly due to the CSS not loading.
+
+## Expected Result
+
+The website should display correctly, with all CSS loading correctly.
+
+## Actual Result
+
+The website is not displaying correctly due to the CSS not loading.
 
 The following issues are known to exist in this project:
 
