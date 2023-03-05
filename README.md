@@ -136,16 +136,7 @@ No known issues at this time. If you encounter any issues, please submit them to
 No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
 
 
-## Required Links
 
-The Product Owner has requested links to the following:
-
-- [Gantt chart for project timing](https://example.com/gantt-chart)
-- [Design prototype](https://example.com/design-prototype)
-- [Style guide](https://example.com/style-guide)
-- [Kanban project board](https://example.com/kanban-board)
-- [Repository link](https://example.com/repository)
-- [Hosted application demo link](https://example.com/demo)
 
 ## About Me
 
@@ -157,7 +148,6 @@ In addition to my technical skills, I have excellent communication and problem-s
 
  I'd be happy to hear from you!
 
-I'd be happy to hear from you!
 
 ## License
 
