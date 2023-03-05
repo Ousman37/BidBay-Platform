@@ -148,7 +148,6 @@ In addition to my technical skills, I have excellent communication and problem-s
 
  I'd be happy to hear from you!
 
-I'd be happy to hear from you!
 
 ## License
 
