@@ -108,7 +108,6 @@ This project was created by Ethmane Didi as part of a group project for the Full
 ## Known Issues
 
 ![Bug Icon](https://img.shields.io/badge/-Bug-red) There is a bug in the Github Pages feature.
->>>>>>> development
 
 The CSS on the BidBay-Platform website is not loading correctly on Github Pages. The website is displaying correctly on my local machine and other hosting services, but the CSS is not displaying on Github Pages. I've tried clearing my cache and rebuilding the website, but the issue persists.
 
@@ -136,8 +135,7 @@ No known issues at this time. If you encounter any issues, please submit them to
 
 No known issues at this time. If you encounter any issues, please submit them to the issue tracker.
 
->>>>>>> development
->>>>>>>
+
 ## Required Links
 
 The Product Owner has requested links to the following:
