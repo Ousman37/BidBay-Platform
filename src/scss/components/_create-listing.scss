@@ -57,8 +57,8 @@
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 16px;
- border: none;
- max-width: 150px;
+  border: none;
+  max-width: 150px;
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
@@ -69,4 +69,12 @@
     margin-right: 10px;
     color: #fff;
   }
+}
+
+.success-message {
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  color: green;
+  font-weight: bold;
 }
