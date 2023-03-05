@@ -1,25 +1,8 @@
-console.log('hello');
 
-$(document).ready(function () {
-  $('#search').on('keyup', function () {
-    var value = $(this).val();
-    console.log(value);
-    $.ajax({
-      url: 'https://api.noroff.dev/api/v1/auction/listings',
-      type: 'post',
-      data: {
-        val: value,
-      },
-      success: function (data) {
-        $('#data').html(data);
-      },
-    });
-  });
-});
 
-// console.log('Hello world ');
-
+// Define productsContainer in a higher scope
 const productsContainer = document.getElementById('products');
+
 const searchInput = document.getElementById('search');
 
 const ListingsURL = 'https://api.noroff.dev/api/v1/auction/listings';
@@ -37,7 +20,9 @@ function createProductCards(products) {
           <h5 class="card-title">${product.title}</h5>
           <p class="card-text">${product.description}</p>
           <div class="d-flex justify-content-between align-items-center">
-            <a href="/src/public/bid_listing.html?id=${product.id}" class="btn btn-sm btn-outline-secondary">Add Bid Now</a>
+            <a href="/src/public/bid_listing.html" class="btn btn-sm new-class">Add Bid Now</a>
+           <a href="/src/public/View-Bids.html?listingId=${product.id}" class="btn btn-sm btn-outline-secondary">View Bids</a>
+
             <small class="text-muted fs-1">${product._count.bids}</small>
           </div>
         </div>

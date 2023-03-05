@@ -26,7 +26,7 @@ function createProductCards(products) {
           <p class="card-text">${product.description}</p>
           <div class="d-flex justify-content-between align-items-center">
             <a href="/src/public/bid_listing.html?id=${product.id}" class="btn btn-sm btn-outline-secondary">Add Bid Now</a>
-            <small class="text-muted fs-1">${product._count.bids}</small>
+            <a href="/src/public/view-bids.html" class="btn btn-sm btn-outline-secondary">View Now</a>
           </div>
         </div>
       </div>
@@ -36,7 +36,8 @@ function createProductCards(products) {
 }
 
 // Get all products from API and create product cards
-function getAllProducts() {
+function getAllProducts(event) {
+  const searchTerm = event ? event.target.value.toLowerCase() : '';
   // Check if user is logged in
   if (checkUser === 'true') {
     // Retrieve user ID from authToken or another source
@@ -49,7 +50,19 @@ function getAllProducts() {
     })
       .then(response => response.json())
       .then(res => {
-        createProductCards(res);
+        if(searchTerm)
+        {
+          const filteredProducts = res.filter(product => {
+            return (
+              product.title.toLowerCase().includes(searchTerm)
+            );
+          });
+          createProductCards(filteredProducts);
+        }
+        else{
+          createProductCards(res);
+        }
+      
       })
       .catch(err => {
         console.log('Error -- ', err.message);
@@ -62,7 +75,19 @@ function getAllProducts() {
     })
       .then(response => response.json())
       .then(res => {
-        createProductCards(res);
+        if(searchTerm)
+        {
+          const filteredProducts = res.filter(product => {
+            return (
+              product.title.toLowerCase().includes(searchTerm)
+            );
+          });
+          createProductCards(filteredProducts);
+        }
+        else{
+          createProductCards(res);
+        }
+      
       })
       .catch(err => {
         console.log('Error -- ', err.message);
@@ -93,7 +118,7 @@ function getAllProducts() {
 // }
 
 // // Add event listeners
-// searchInput.addEventListener('input', searchProducts);
+searchInput.addEventListener('input', getAllProducts);
 
 // // Create product cards on page load
 //
