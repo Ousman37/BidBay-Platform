@@ -1,4 +1,3 @@
-
 // console.log('hello');
 
 // $(document).ready(function () {
@@ -17,8 +16,6 @@
 //     });
 //   });
 // });
-
-
 
 // Define productsContainer in a higher scope
 const productsContainer = document.getElementById('products');
@@ -74,6 +71,8 @@ function searchProducts(event) {
     });
 }
 
+
 // Add event listeners
 searchInput.addEventListener('input', searchProducts);
+
 
