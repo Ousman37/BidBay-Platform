@@ -3,7 +3,8 @@ window.addEventListener('load', () => {
   const urlParams = new URLSearchParams(window.location.search);
   const listingId = urlParams.get('id');
   console.log('Listing ID:', listingId);
-  
+  console.log('URL:', window.location.href);
+
   // Define the function to get bids for a specific listing
   async function getBidsForListing(listingId) {
   const bidListElement = document.querySelector('#bid-list');
