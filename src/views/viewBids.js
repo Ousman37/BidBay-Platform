@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 window.addEventListener('load', () => {
   // Get the listing ID from the URL parameters
@@ -46,7 +46,7 @@ window.addEventListener('load', () => {
   // Call the function to get bids for the listing
   getBidsForListing(listingId);
 });
-=======
+
 window.addEventListener('load', () => {
   // Get the listing ID from the URL parameters
   const urlParams = new URLSearchParams(window.location.search);
@@ -101,4 +101,4 @@ window.addEventListener('load', () => {
   getBidsForListing(listingId);
   });
 
->>>>>>> development
+
